@@ -145,3 +145,8 @@ line-height: 1.9;
         padding-top:50px;
     }
 }
+
+
+.bg-body-tertiary {
+    background-color: transparent!important;
+}
