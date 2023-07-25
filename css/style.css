@@ -1,7 +1,57 @@
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.landing-hover {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    opacity: 0;
+    transition: all .5s ease;
 }
 
+.navbar:hover .landing-hover{
+    opacity:1;
+}
+.navbar-toggler,.collapsed {
+    border:none;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar-toggler:focus{
+    border:none;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.carousel-caption{
+    bottom: 45%!important;
+    left:5%;
+    width: 500px;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+.carousel-caption-hover{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    transition: all .5s ease;
+}
+.carousel-caption:hover .landing-hover{
+    opacity: 1;
+}
 body{
     background: f1fbff;
 }
@@ -9,41 +59,29 @@ body{
 .section-padding{
     padding: 100px 0;
 }
-
-.carousel-item{
-    height: 100vh;
-    min-height: 300px;
+.carousel-inner::before{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height:  100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
+
+
 .carousel-caption{
-    bottom: 220px;
     z-index:2;
 }
 
-.carousel-caption h5{
-    font-size:30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top:25px;
-    text-shadow: 10px 10px 20px black;
-}
-
-
-.carousel-caption p{
-width: 60%;
-margin: auto;
-font-size: 16px;
-line-height: 1.9;
-}
-
-
 
 .navbar-nav a{
-    font-size: 15px;
     text-transform: uppercase;
-
-    font-weight: 500;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 20px;
 }
 
 .navbar-light .navbar-brand{
@@ -110,14 +148,14 @@ line-height: 1.9;
         text-align: center;
     }
     .carousel-caption{
-        bottom: 125px;
+        bottom: 43%!important;
+        left:-8%;
+        width: 500px;
     }
-    .carousel-caption h5{
-        font-size: 17px;
+    .carousel-caption-hover{
+        font-size: 2em;
     }
-    .carousel-caption a{
-        padding: 10px 15px;
-    }
+    
 
     .carousel-caption p{
         width: 100%;
@@ -137,6 +175,15 @@ line-height: 1.9;
 }
 
 
-.bg-body-tertiary {
-    background-color: transparent!important;
+
+
+
+.footer-link{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-decoration: none;
+    color:white;
 }
