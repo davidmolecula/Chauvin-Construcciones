@@ -40,6 +40,7 @@
 }
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
+
 }
 .carousel-caption-hover{
     font-size: 3em;
@@ -148,7 +149,7 @@ body{
         text-align: center;
     }
     .carousel-caption{
-        bottom: 43%!important;
+        bottom: 50%!important;
         left:-8%;
         width: 500px;
     }
