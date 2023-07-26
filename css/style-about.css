@@ -2,8 +2,39 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif; 
 }
+:root{
+    --color1:rgb(103,151,151);
+    --color2:rgb(176,201,201);
+    --color3:rgb(53,78,78);
+    --color4:rgb(132,156,148);
+    --color5:rgb(180,204,204);
+    --black:#212529;
+}
+.servicios-section{
+    padding-top: 80px; 
+    overflow-x: hidden;
+    background-color: white;
+
+}
+.titulo-about-contenedora{
+    display: flex;
+    justify-content: center;
+}
+.titulo-about{
+    position: relative;
+    height: 50px;
+}
+.titulo-about::before{
+    content: '';
+    position: absolute;
+    bottom:-10%;
+    width: 100%;
+    border: 3px solid var(--black);
+    border-radius: 15px;
+}
+
 .servicios{
     margin-top:50px;
     width: 100vw;
@@ -11,14 +42,10 @@
     display: grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(6,6rem);
-    row-gap:.5rem;
-    border:1px solid red;
 }
 .servicio {
     width: 300px;
     height: 150px;
-    margin-bottom: 0.5rem!important;
-    border: 1px solid blueviolet;
 }
 .servicio:nth-child(1){
     grid-column:4/7;
@@ -50,10 +77,10 @@
     text-align: center;
 }
 .about-us-imagen-contenedora img {
-    width: 50rem;
-    width: 100%;
+    width: 20rem;
     object-fit: cover;
     opacity: 0.8;
+    border-radius: 15px;
 }
 .about-us-imagen-contenedora {
     grid-column: 7 / 11;
@@ -98,13 +125,72 @@
 
 
 @media (max-width: 500px){
-
-
+    .servicios{
+        row-gap: 2rem;
+    }
 .servicio {
-    width: 10rem;
+    width: 20rem;
 }
 }
+
 @media (max-width: 1500px){
 .about-us-imagen-contenedora {
     grid-row: 3 / -1;
 }}
+
+.der{
+    transform: translateX(-500px);
+    transition: all .9s ease;
+}
+.izq{
+    transform: translateX(500px);
+    transition: all .9s ease;
+}
+.izq-lento{
+    transform: translateX(500px);
+    transition: all 2s ease;
+}
+.dos{
+    transform: translateX(-500px);
+    transition: all 2s ease;
+    
+}
+.derVuelve>div, .derVuelve>p{
+    transform: translateX(0px);
+    padding-left: 10px;
+
+}
+.derVuelve{
+    border-radius: 15px;
+    transition: all 5s ease;
+}
+
+
+.team{
+    overflow-x: hidden;
+}
+.card-contenedora-img img{
+    width: 300px;
+    transform: translateX(-500px);
+    transition: all .9s ease;
+}
+#imagen2{
+    width: 360px;
+}
+.visible img, .atras div{
+    transform:translateX(0px);
+}
+
+.movimiento{
+    transform: translateX(1000px);
+    transition: all 3s ease;
+}
+
+.about-team-der{
+    transform: translateX(-800px);
+    transition: all 2s ease;
+}
+
+.atras>div{
+    transform: translateX(0px);
+}
