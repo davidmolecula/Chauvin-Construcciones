@@ -19,6 +19,7 @@
     text-decoration: none;
     outline: 0;
     box-shadow: none;
+    
 }
 .navbar-toggler:focus{
     border:none;
@@ -34,21 +35,26 @@
 
 
 .carousel-caption{
-    bottom: 45%!important;
+    bottom: 20%!important;
     left:5%;
-    width: 500px;
+    width: 85vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
 }
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
-
 }
-.carousel-caption-hover{
-    font-size: 3em;
+.carousel-caption-hover{ 
+    font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     letter-spacing: 0.5px;
-    line-height: 20px;
     transition: all .5s ease;
+    width: 100%;
+    height: 15vh;
 }
 .carousel-caption:hover .landing-hover{
     opacity: 1;
@@ -130,8 +136,11 @@ body{
 }
 @media only screen and (min-width:768px) and (max-width:991px){
 
+    .navbar-nav{
+        text-align: center;
+    }
     .carousel-caption{
-        bottom: 370px;
+        bottom: 200px;
     }
 
     .carousel-caption p{
@@ -145,24 +154,22 @@ body{
     }
 }
 @media only screen and (max-width:767px){
+    .navbar-toggler:checked{
+        background-color: rgba(0,0,0,0.2);
+    }
     .navbar-nav{
         text-align: center;
     }
     .carousel-caption{
-        bottom: 50%!important;
-        left:-8%;
-        width: 500px;
+        bottom: 15%!important;
+        left: 10%;
+        word-break: keep-all;
     }
     .carousel-caption-hover{
-        font-size: 2em;
+        font-size: 1.2em;
+        word-break: keep-all;
     }
     
-
-    .carousel-caption p{
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
-    }
 
     .card{
         margin-bottom:30px;

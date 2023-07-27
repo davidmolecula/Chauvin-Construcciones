@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Zen Kaku Gothic New', sans-serif; 
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    letter-spacing: 0.5px;
 }
 :root{
     --color1:rgb(103,151,151);
@@ -10,29 +11,86 @@
     --color3:rgb(53,78,78);
     --color4:rgb(132,156,148);
     --color5:rgb(180,204,204);
-    --black:#212529;
+    --black:rgb(33, 37, 41);
 }
-.servicios-section{
-    padding-top: 80px; 
-    overflow-x: hidden;
-    background-color: white;
 
+/* ESTILO DE LA SECCION NOSOTROS*/
+
+.nosotros-section{
+    position: relative;
+    margin-top: 50px; 
+    background-image: url(../img/Nosotros/20190802_101130.jpg);
+    background-size: cover;
+    height: fit-content;
+    overflow: hidden;
 }
+.nosotros-section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 37, 41,0.5);
+}
+
+/* ESTILO Y ANIMACIONES DE "NOSOTROS" */
 .titulo-about-contenedora{
     display: flex;
     justify-content: center;
+    margin-top: 3em;
 }
 .titulo-about{
     position: relative;
-    height: 50px;
+    height: 100px;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
 }
-.titulo-about::before{
-    content: '';
-    position: absolute;
-    bottom:-10%;
-    width: 100%;
-    border: 3px solid var(--black);
-    border-radius: 15px;
+.titulo-about-span-hidden{
+
+    overflow: hidden;
+}
+.titulo-about-span-translate
+{
+    transform: translateY(-120px);
+    transition: all 1s;
+}
+.titulo-about-span-rotate{
+    transform: rotateZ(-25deg);
+    transition: all 1s;
+    opacity: 0;
+    color: white;
+}
+.titulo-about-span-translate-back{
+    transform: translate(0);
+}
+.titulo-about-span-rotate-back{
+    transform: rotateZ(0);
+    opacity: 1;
+}
+
+/* CONTENIDO DE LA SECCION: FILOSOFIA*/
+
+.nosotros-content-one{
+    margin-top: 5em;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nosotros-content-one-title{
+    font-size: 50px;
+}
+
+.daniel-content{
+    
+    border: 1px solid red;
+}
+
+.about-team-der{
+    transform: translateX(80px);
+    opacity: 0;
+    transition: all 2s ease;
+    color: white;
 }
 
 .servicios{
@@ -42,10 +100,15 @@
     display: grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(6,6rem);
+
 }
 .servicio {
     width: 300px;
     height: 150px;
+    color: white;
+}
+.servicio>div{
+    text-transform: uppercase;
 }
 .servicio:nth-child(1){
     grid-column:4/7;
@@ -88,6 +151,13 @@
     width: 350px;
 }
 
+
+
+/*REPONSIVE*/
+
+
+
+
 @media (max-width: 1000px){
 .servicios {
     display: flex;
@@ -125,6 +195,7 @@
 
 
 @media (max-width: 500px){
+
     .servicios{
         row-gap: 2rem;
     }
@@ -138,31 +209,47 @@
     grid-row: 3 / -1;
 }}
 
-.der{
-    transform: translateX(-500px);
-    transition: all .9s ease;
+
+
+
+
+
+/*TRASLACIONES DE LOS TEXTOS DE LA SEGUNDA SECCION DE NOSOTROS*/
+
+
+
+
+
+.traslacion-izq-der{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition:visibility 1s, opacity 2s, transform 1s; 
 }
 .izq{
-    transform: translateX(500px);
-    transition: all .9s ease;
+    transform: translateX(100px);
+    opacity: 0;
+    transition:visibility 1s, opacity 2s, transform 1s;
 }
 .izq-lento{
-    transform: translateX(500px);
-    transition: all 2s ease;
+    transform: translateX(100px);
+    opacity: 0;
+    transition:visibility 1s, opacity 2s, transform 2s;
 }
 .dos{
-    transform: translateX(-500px);
-    transition: all 2s ease;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition:visibility 1s, opacity 2s, transform 2s;
     
 }
 .derVuelve>div, .derVuelve>p{
     transform: translateX(0px);
     padding-left: 10px;
-
+    opacity: 1;
 }
 .derVuelve{
     border-radius: 15px;
     transition: all 5s ease;
+    opacity: 1;
 }
 
 
@@ -172,25 +259,25 @@
 .card-contenedora-img img{
     width: 300px;
     transform: translateX(-500px);
-    transition: all .9s ease;
+    opacity: 0;  
 }
 #imagen2{
     width: 360px;
 }
 .visible img, .atras div{
     transform:translateX(0px);
+    opacity: 0;
 }
 
-.movimiento{
-    transform: translateX(1000px);
+.nosotros-content-one-movement{
+    transform: translateX(100px);
+    opacity: 0;
     transition: all 3s ease;
 }
 
-.about-team-der{
-    transform: translateX(-800px);
-    transition: all 2s ease;
-}
+
 
 .atras>div{
     transform: translateX(0px);
+    opacity: 1;
 }
