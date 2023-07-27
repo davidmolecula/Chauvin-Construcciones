@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    padding: 0; 
+    margin: 0; 
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+.image-box {
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#image-box-1 {
+    width: 100%;
+    height: 100%;
+}
+
+#image-box-2, #image-box-3 {
+    width: 100%;
+    height: 50%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-box:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-box:hover .project-title {
+    opacity: 1;
+}
+
+.image-box:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 252, 252, 0.5); 
+    z-index: 1;
+}
+
+/* Mostrar título del proyecto en hover */
+.image-box:hover .project-title {
+    opacity: 1;
+    z-index: 2; 
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../Chauvin-Construcciones-2.1/Chauvin-Construcciones-2/css/style.css">
+    <link rel="stylesheet" href="../css/style-projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Chauvin Arquitectura</title>
+    <style>
+        /* Estilos para las secciones de proyectos */
+.project-section {
+    /* ... */
+    position: relative;
+    overflow: hidden;
+}
+
+.project-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a71515; /* Color del padding del proyecto */
+    z-index: -1;
+    opacity: 0; /* Inicialmente ocultamos el padding */
+    transition: opacity 0.3s; /* Agregamos una transición para suavizar el cambio de opacidad */
+}
+
+.project-section:hover::before {
+    opacity: 1; /* Mostramos el padding al hacer hover */
+}
+
+.project-img {
+    /* ... */
+    transition: transform 0.3s; /* Agregamos una transición para suavizar el aumento de tamaño */
+}
+
+.project-section:hover .project-img {
+    transform: scale(1.1); /* Aumentamos el tamaño de la imagen al hacer hover */
+}
+
+.project-name {
+    /* ... */
+    transform: translateY(100%); /* Inicialmente ocultamos el nombre del proyecto */
+    transition: transform 0.3s; /* Agregamos una transición para suavizar la aparición/desaparición */
+}
+
+.project-section:hover .project-name {
+    transform: translateY(0); /* Mostramos el nombre del proyecto al hacer hover */
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../index.html">C<div class="landing-hover">hauvin Arquitectura
+                            </div> </a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../About-us.html">S<div class="landing-hover">obre Nosotros
+                            </div></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../projects2.html">P<div class="landing-hover">royectos</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../contact-us.html">C<div class="landing-hover">ontacto</div>
+                        </a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-section">
+            <a href="proyecto1.html">
+                <img src="../img/3.jpeg" alt="" class="project-img">
+                <div class="project-name">Nombre del Proyecto 1</div>
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
