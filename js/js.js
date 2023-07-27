@@ -1,4 +1,7 @@
 
+const divTranslate=document.getElementById('div-translate');
+const divRotate=document.getElementById('div-rotate');
+
 const servicio1=document.getElementById('servicio1');
 const servicio2=document.getElementById('servicio2');
 const servicio3=document.getElementById('servicio3');
@@ -6,11 +9,14 @@ const servicio4=document.getElementById('servicio4');
 const servicio5=document.getElementById('servicio5');
 const servicio6=document.getElementById('servicio6');
 const imagen2=document.getElementById('imagen2');
-const texto1=document.getElementById('texto1');
-const teamHeader=document.getElementById('section-team-header');
+const nosotrosTexto1=document.getElementById('nosotros-texto1');
+const nosotrosDaniel=document.getElementById('nosotros-daniel');
 
 
-
+window.addEventListener('load',()=>{
+    divRotate.classList.add('titulo-about-span-rotate-back');
+    divTranslate.classList.add('titulo-about-span-translate-back');
+})
 const cargarServicio=(entradas,observador)=>{
     entradas.forEach(entrada=>{
         if(entrada.isIntersecting){
@@ -24,13 +30,29 @@ const cargarServicio=(entradas,observador)=>{
     })
 }
 
-const cargarImagen=(entradas,observador2)=>{
+const loadText=(entradas,observador2)=>{
     entradas.forEach(entrada => {
         if(entrada.isIntersecting){
-            console.log('visible');
             entrada.target.classList.add('visible');
-            texto1.classList.add('atras');
-            teamHeader.classList.add('atras');
+            nosotrosTexto1.classList.add('atras');
+            
+        }
+        else{
+            entrada.target.classList.remove('visible');
+            nosotrosTexto1.classList.remove('atras');
+        }
+        
+    });
+}
+
+const loadDaniel=(entradas,observador2)=>{
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('atras');
+            
+        }
+        else{
+            entrada.target.classList.remove('atras');
         }
         
     });
@@ -44,14 +66,21 @@ const observador=new IntersectionObserver(cargarServicio,{
     threshold:.3
 });
 
-const observador2=new IntersectionObserver(cargarImagen,{
+const observador2=new IntersectionObserver(loadText,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
-    threshold:.3
+    threshold:.6
 });
+
+const observador3=new IntersectionObserver(loadDaniel,{
+    root:null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold:.6
+})
 
 
 observador.observe(servicio1);
-observador2.observe(texto1);
+observador2.observe(nosotrosTexto1);
+observador3.observe(nosotrosDaniel)
 
 
