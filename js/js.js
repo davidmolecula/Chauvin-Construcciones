@@ -11,6 +11,8 @@ const servicio6=document.getElementById('servicio6');
 const imagen2=document.getElementById('imagen2');
 const nosotrosTexto1=document.getElementById('nosotros-texto1');
 const nosotrosDaniel=document.getElementById('nosotros-daniel');
+const nosotrosDanielFoto=document.getElementById('nosotros-daniel-foto');
+const nosotrosContentValores=document.getElementById('nosotros-content-valores');
 
 
 window.addEventListener('load',()=>{
@@ -35,11 +37,13 @@ const loadText=(entradas,observador2)=>{
         if(entrada.isIntersecting){
             entrada.target.classList.add('visible');
             nosotrosTexto1.classList.add('atras');
+            nosotrosDanielFoto.classList.add('atras');
             
         }
         else{
             entrada.target.classList.remove('visible');
             nosotrosTexto1.classList.remove('atras');
+            nosotrosDanielFoto.classList.remove('atras');
         }
         
     });
@@ -49,7 +53,20 @@ const loadDaniel=(entradas,observador2)=>{
     entradas.forEach(entrada => {
         if(entrada.isIntersecting){
             entrada.target.classList.add('atras');
-            
+            imagen2.classList.add('atras');
+        }
+        else{
+            entrada.target.classList.remove('atras');
+            imagen2.classList.remove('atras');
+        }
+        
+    });
+}
+
+const loadValores=(entradas,observador4)=>{
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('atras');
         }
         else{
             entrada.target.classList.remove('atras');
@@ -57,7 +74,6 @@ const loadDaniel=(entradas,observador2)=>{
         
     });
 }
-
 
 
 const observador=new IntersectionObserver(cargarServicio,{
@@ -69,7 +85,7 @@ const observador=new IntersectionObserver(cargarServicio,{
 const observador2=new IntersectionObserver(loadText,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
-    threshold:.6
+    threshold:.7
 });
 
 const observador3=new IntersectionObserver(loadDaniel,{
@@ -78,9 +94,15 @@ const observador3=new IntersectionObserver(loadDaniel,{
     threshold:.6
 })
 
+const observador4=new IntersectionObserver(loadValores,{
+    root:null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold:.5
+}) 
 
 observador.observe(servicio1);
 observador2.observe(nosotrosTexto1);
 observador3.observe(nosotrosDaniel)
+observador4.observe(nosotrosContentValores);
 
 
