@@ -1,6 +1,7 @@
 
 const divTranslate=document.getElementById('div-translate');
 const divRotate=document.getElementById('div-rotate');
+const pantalla=window.innerWidth;
 
 const servicio1=document.getElementById('servicio1');
 const servicio2=document.getElementById('servicio2');
@@ -16,8 +17,8 @@ const nosotrosContentValores=document.getElementById('nosotros-content-valores')
 
 
 window.addEventListener('load',()=>{
-    divRotate.classList.add('titulo-about-span-rotate-back');
-    divTranslate.classList.add('titulo-about-span-translate-back');
+    divRotate.classList.add('titulo-nosotros-span-rotate-back');
+    divTranslate.classList.add('titulo-nosotros-span-translate-back');
 })
 const cargarServicio=(entradas,observador)=>{
     entradas.forEach(entrada=>{
@@ -85,7 +86,7 @@ const observador=new IntersectionObserver(cargarServicio,{
 const observador2=new IntersectionObserver(loadText,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
-    threshold:.7
+    threshold:.4
 });
 
 const observador3=new IntersectionObserver(loadDaniel,{
@@ -97,7 +98,7 @@ const observador3=new IntersectionObserver(loadDaniel,{
 const observador4=new IntersectionObserver(loadValores,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
-    threshold:.5
+    threshold:.4
 }) 
 
 observador.observe(servicio1);
