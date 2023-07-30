@@ -1,11 +1,18 @@
+@font-face
+{
+    font-family: Garamond2;
+    src: url(../font/garamond-premier-pro-display_PsgQt/Garamond\ Premier\ Pro\ Display/);
+}
+
 body {
-    font-family: Arial, sans-serif;
+   font-family: Garamond2;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-.container_2 {
+
+.container_2,.container_1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -13,6 +20,7 @@ body {
     width: 100%;
     padding: 0; 
     margin: 0; 
+    
 }
 
 .left-column, .right-column {
@@ -27,7 +35,9 @@ body {
     width: 100%;
 
 }
-
+.right-column{
+    padding-right: 0.5%;
+}
 
 
 
@@ -38,14 +48,17 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
 }
 
-#image-box-1 {
+#image-box-1,#image-box-4 {
     width: 100%;
     height: 100%;
 }
 
-#image-box-2, #image-box-3 {
+
+#image-box-2, #image-box-3 ,#image-box-5,#image-box-6 {
     width: 100%;
     height: 50%;
 }
@@ -87,8 +100,115 @@ body {
     z-index: 1;
 }
 
-/* Mostrar título del proyecto en hover */
+
 .image-box:hover .project-title {
     opacity: 1;
     z-index: 2; 
+}
+
+
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  .project-info {
+    margin-top: 5%;
+
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .project-image img {
+    width: 60%;
+    height: 100%;
+    transition: filter 0.3s;
+    filter: grayscale(100%);
+}
+
+  
+  
+  .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+  }
+.project-description {
+    text-align: center;
+    max-width: 40%; 
+    margin-top: 1%; 
+  }
+
+
+.project-info h1{
+  
+        margin-bottom: 2%;
+        padding-left: 2.5%;
+      
+}
+.project-column {
+    column-count: 2; 
+    
+  }
+
+  .project-info p {
+    margin: 0;
+  }
+
+  .left-column_1, .right-column_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+
+}
+  .left-column_1 {
+    float: left;
+    padding-bottom: 5%;
+    padding-left: 5%;
+  }
+
+  .right-column_1 {
+    float: right;
+    margin-right: 60%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+  }
+
+
+
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+
+
+.slide-up {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 1s ease, transform 1s ease;
 }
