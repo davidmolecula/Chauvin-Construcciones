@@ -72,7 +72,7 @@
 
 .nosotros-content-one{
     margin-top:11em;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
 }
@@ -105,19 +105,30 @@
     opacity: 0;
     transition: all 2s ease;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(108, 108, 108,0.3);
+    border-radius: 5px;
+    padding: 10px;
 }
 .nosotros-content-valores>div{
     margin-top: 100px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     transform: translateX(-80px);
     opacity: 0;
     transition: all 1s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(108, 108, 108,0.3);
+    border-radius: 5px;
+    padding: 10px;
 }
 
+.nosotros-content-valores>div{
+    
+}
 .servicios{
     padding-top: 50px;
     max-width: 100vw;
@@ -165,7 +176,7 @@
     text-align: center;
 }
 .nosotros-imagen-contenedora img {
-    width: 20rem;
+    width: 100%;
     object-fit: cover;
     opacity: 0.8;
     border-radius: 15px;
@@ -306,6 +317,10 @@
     transform: translateX(100px);
     opacity: 0;
     transition: all 3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(108, 108, 108,0.3);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -319,6 +334,9 @@
     .titulo-nosotros{
         font-size: 45px;
         margin-top: 200px;
+    }
+    #imagen2{
+        width: 330px;
     }
     .row
     {
