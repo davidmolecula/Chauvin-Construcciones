@@ -56,38 +56,33 @@ grayscaleImages.forEach(image => {
 
 
 
-  
 
+// Obtenemos todos los elementos que deseamos animar
+const elementsToAnimate = document.querySelectorAll('.project-image, .project-description');
 
-
-
-// Obtener todos los elementos con el atributo "data-animation"
-const animatedElements = document.querySelectorAll('[data-animation]');
-
-// Función para comprobar si un elemento está en la ventana visible
-function isInViewport(element) {
-    const bounding = element.getBoundingClientRect();
+// Función para determinar si un elemento está visible en la ventana del navegador
+function isElementVisible(element) {
+    const rect = element.getBoundingClientRect();
     return (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 
-// Función para aplicar la transición a los elementos en la ventana visible
-function animateElements() {
-    animatedElements.forEach((element) => {
-        if (isInViewport(element)) {
-            // Obtener la clase de animación desde el atributo "data-animation" y aplicarla
-            const animationClass = element.dataset.animation;
-            element.classList.add(animationClass);
+// Función para aplicar la animación a los elementos que están visibles
+function animateElementsOnScroll() {
+    elementsToAnimate.forEach(element => {
+        if (isElementVisible(element)) {
+            element.classList.add('visible');
         }
     });
 }
 
-// Agregar evento de scroll para aplicar la transición cuando los elementos estén en la ventana visible
-window.addEventListener('scroll', animateElements);
+// Llamamos a la función inicialmente para animar los elementos que ya están visibles
+animateElementsOnScroll();
 
-// Llamar a la función una vez al cargar la página para animar elementos visibles inicialmente
-animateElements();
+// Agregamos un event listener al scroll para animar los elementos a medida que se hacen visibles
+window.addEventListener('scroll', animateElementsOnScroll);
+

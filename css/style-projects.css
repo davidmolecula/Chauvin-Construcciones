@@ -197,18 +197,22 @@ body {
 
 
 
+/* Estilos CSS omitidos para simplificar */
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+/* Clase para aplicar la transición de deslizamiento hacia arriba (slide-up) */
+.project-image.visible,
+.project-description.visible {
+    opacity: 1;
+    transform: none;
     transition: opacity 1s ease, transform 1s ease;
 }
 
+.project-image {
+    opacity: 0;
+    transform: translateY(30px);
+}
 
-
-
-.slide-up {
+.project-description {
     opacity: 0;
     transform: translateX(30px);
-    transition: opacity 1s ease, transform 1s ease;
 }
