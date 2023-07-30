@@ -1,3 +1,12 @@
+:root{
+    --color1:rgb(103,151,151);
+    --color2:rgb(176,201,201);
+    --color3:rgb(53,78,78);
+    --color4:rgb(132,156,148);
+    --color5:rgb(180,204,204);
+    --black:rgb(33, 37, 41);
+}
+
 
 .landing-hover {
     margin: 0;
