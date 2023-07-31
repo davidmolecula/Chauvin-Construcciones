@@ -38,22 +38,31 @@ h1{
 
 .uno {
     display: flex;
-    position: relative;
-    z-index: 10;
+    position: relative; 
     align-items: center;
     justify-content: center;
-    background-image: url(../img/Nosotros/20190802_101130.jpg);
+    background-image: url(../img/Proyecto/Proyecto-Azul/carrousel-proyectoAzul.jpg);
+    background-size: contain;
     width: 45%;
-    height: 500px;
     height: 90%;
+    z-index: 10;
     background-color: white;
 }
+.uno::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
 .contacto-info-div-contenido{
+    position: relative;
+    z-index: 10;
     text-align: start;
     padding: 20px;
     color: white;
     width: 90%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.8);
 }
 .dos{
     width: 45%;

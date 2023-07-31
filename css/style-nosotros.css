@@ -1,10 +1,5 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    letter-spacing: 0.5px;
-}
+
+
 :root{
     --color1:rgb(103,151,151);
     --color2:rgb(176,201,201);
@@ -13,7 +8,9 @@
     --color5:rgb(180,204,204);
     --black:rgb(33, 37, 41);
 }
-
+*{
+    font-family: Gotham;
+}
 /* ESTILO DE LA SECCION NOSOTROS*/
 
 .nosotros-section{
@@ -39,10 +36,12 @@
 }
 .titulo-nosotros{
     position: relative;
+    font-family: Gotham;
     height: 100px;
     text-transform: uppercase;
     font-size: 100px;
-    font-weight: 700;
+    font-weight: 800;
+
 }
 .titulo-nosotros-span-hidden{
 
@@ -75,10 +74,13 @@
     font-size: 15px;
     color: white;
     text-transform: uppercase;
+    font-family: Garamond2;
 }
 
 .nosotros-content-one-title{
     font-size: 50px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+
 }
 
 /*Seccion Nosotros dos */
