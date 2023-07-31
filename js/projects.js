@@ -92,47 +92,48 @@ window.addEventListener('scroll', animateElementsOnScroll);
 
 
  // Variables para controlar la redirección
- let reachedEndOfPage = false;
- let redirectTimeout;
+let reachedEndOfPage = false;
+let redirectTimeout;
+let loaderElement = document.getElementById("loader");
 
- // Función para redirigir a otra página después de un tiempo especificado
- function redirectToAnotherPageWithDelay(delayTime) {
-   redirectTimeout = setTimeout(function () {
-     // Aquí cambia "otra-pagina.html" por la URL de la página a la que quieres redirigir.
-     window.location.href = "../projects.html";
-   }, delayTime);
- }
+// Función para redirigir a otra página después de un tiempo especificado
+function redirectToAnotherPageWithDelay(delayTime) {
+  loaderElement.classList.add("loader2"); // Iniciar animación del loader
+  redirectTimeout = setTimeout(function () {
+    // Aquí cambia "otra-pagina.html" por la URL de la página a la que quieres redirigir.
+    window.location.href = "../projects.html";
+  }, delayTime);
+}
 
- // Función para cancelar la redirección si el usuario se desplaza hacia arriba
- function cancelRedirect() {
-   clearTimeout(redirectTimeout);
-   reachedEndOfPage = false;
- }
+// Función para cancelar la redirección si el usuario se desplaza hacia arriba
+function cancelRedirect() {
+  clearTimeout(redirectTimeout);
+  reachedEndOfPage = false;
+}
 
- // Evento de scroll para verificar si ha llegado al pie de página
- window.addEventListener("scroll", function () {
-   const footer = document.getElementById("footer");
-   const footerPosition = footer.getBoundingClientRect().top;
-   const windowHeight = window.innerHeight;
+// Evento de scroll para verificar si ha llegado al pie de página
+window.addEventListener("scroll", function () {
+  const footer = document.getElementById("footer");
+  const footerPosition = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
 
-   // Ajusta 50 al número de píxeles que desees que falten para llegar al pie de página.
-   if (footerPosition <= windowHeight + 50) {
-     // Solo redirigir si se ha alcanzado el final de la página y no hay una redirección pendiente
-     if (!reachedEndOfPage) {
-       reachedEndOfPage = true;
-       // Establece el tiempo de espera en milisegundos (por ejemplo, 5000 para 5 segundos)
-       redirectToAnotherPageWithDelay(5000);
-     }
-   } else {
-     // Restablecer la bandera cuando se aleja del pie de página
-     cancelRedirect();
-   }
+  // Ajusta 50 al número de píxeles que desees que falten para llegar al pie de página.
+  if (footerPosition <= windowHeight + 1) {
+    // Solo redirigir si se ha alcanzado el final de la página y no hay una redirección pendiente
+    if (!reachedEndOfPage) {
+      reachedEndOfPage = true;
+      // Establece el tiempo de espera en milisegundos (por ejemplo, 5000 para 5 segundos)
+      redirectToAnotherPageWithDelay(4000);
+    }
+  } else {
+    // Restablecer la bandera cuando se aleja del pie de página
+    cancelRedirect();
+  }
 
-   // Verificar si el usuario está haciendo scroll hacia arriba y cancelar la redirección
-   const currentScrollPosition =
-     window.pageYOffset || document.documentElement.scrollTop;
-   if (currentScrollPosition < prevScrollPosition) {
-     cancelRedirect();
-   }
-   prevScrollPosition = currentScrollPosition;
- });
+  // Verificar si el usuario está haciendo scroll hacia arriba y cancelar la redirección
+  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScrollPosition < prevScrollPosition) {
+    cancelRedirect();
+  }
+  prevScrollPosition = currentScrollPosition;
+});
