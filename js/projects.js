@@ -2,7 +2,11 @@
 const projectURLs = {
     "image-box-1": "Projects/Projects_Azul.html",
     "image-box-3": "Projects/Projects_Las_Margaritas.html",
-    "image-box-2": "Projects/Projects_Las_Prunas.html"
+    "image-box-2": "Projects/Projects_Las_Prunas.html",
+    "image-box-6": "Projects/Projects_Romito.html",
+    "image-box-4": "Projects/Projects_Mar_Chiquita.html",
+    "image-box-5": "Projects/Projects_3.html"
+
 };
 
 
@@ -57,21 +61,19 @@ grayscaleImages.forEach(image => {
 
 
 
-// Obtenemos todos los elementos que deseamos animar
 const elementsToAnimate = document.querySelectorAll('.project-image, .project-description');
 
-// Función para determinar si un elemento está visible en la ventana del navegador
 function isElementVisible(element) {
     const rect = element.getBoundingClientRect();
+    const offset = 150; // Ajustamos el desplazamiento antes de que los elementos sean considerados visibles
     return (
-        rect.top >= 0 &&
+        rect.top >= -offset &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 
-// Función para aplicar la animación a los elementos que están visibles
 function animateElementsOnScroll() {
     elementsToAnimate.forEach(element => {
         if (isElementVisible(element)) {
@@ -83,6 +85,54 @@ function animateElementsOnScroll() {
 // Llamamos a la función inicialmente para animar los elementos que ya están visibles
 animateElementsOnScroll();
 
-// Agregamos un event listener al scroll para animar los elementos a medida que se hacen visibles
 window.addEventListener('scroll', animateElementsOnScroll);
 
+
+
+
+
+ // Variables para controlar la redirección
+ let reachedEndOfPage = false;
+ let redirectTimeout;
+
+ // Función para redirigir a otra página después de un tiempo especificado
+ function redirectToAnotherPageWithDelay(delayTime) {
+   redirectTimeout = setTimeout(function () {
+     // Aquí cambia "otra-pagina.html" por la URL de la página a la que quieres redirigir.
+     window.location.href = "../projects.html";
+   }, delayTime);
+ }
+
+ // Función para cancelar la redirección si el usuario se desplaza hacia arriba
+ function cancelRedirect() {
+   clearTimeout(redirectTimeout);
+   reachedEndOfPage = false;
+ }
+
+ // Evento de scroll para verificar si ha llegado al pie de página
+ window.addEventListener("scroll", function () {
+   const footer = document.getElementById("footer");
+   const footerPosition = footer.getBoundingClientRect().top;
+   const windowHeight = window.innerHeight;
+
+   // Ajusta 50 al número de píxeles que desees que falten para llegar al pie de página.
+   if (footerPosition <= windowHeight + 50) {
+     // Solo redirigir si se ha alcanzado el final de la página y no hay una redirección pendiente
+     if (!reachedEndOfPage) {
+       reachedEndOfPage = true;
+       // Establece el tiempo de espera en milisegundos (por ejemplo, 5000 para 5 segundos)
+       redirectToAnotherPageWithDelay(5000);
+     }
+   } else {
+     // Restablecer la bandera cuando se aleja del pie de página
+     cancelRedirect();
+   }
+
+   // Verificar si el usuario está haciendo scroll hacia arriba y cancelar la redirección
+   const currentScrollPosition =
+     window.pageYOffset || document.documentElement.scrollTop;
+   if (currentScrollPosition < prevScrollPosition) {
+     cancelRedirect();
+   }
+   prevScrollPosition = currentScrollPosition;
+ });
