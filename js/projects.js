@@ -2,7 +2,11 @@
 const projectURLs = {
     "image-box-1": "Projects/Projects_Azul.html",
     "image-box-3": "Projects/Projects_Las_Margaritas.html",
-    "image-box-2": "Projects/Projects_Las_Prunas.html"
+    "image-box-2": "Projects/Projects_Las_Prunas.html",
+    "image-box-6": "Projects/Projects_Romito.html",
+    "image-box-4": "Projects/Projects_Mar_Chiquita.html",
+    "image-box-5": "Projects/Projects_3.html"
+
 };
 
 

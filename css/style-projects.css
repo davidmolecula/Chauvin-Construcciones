@@ -241,3 +241,16 @@ body {
     width: 100%;
     height: auto;
 }
+
+#project-image_3
+{
+    width: 50%; /* Puedes ajustar el ancho de las imágenes */
+    margin: 1%;
+}
+
+
+#project-image_3 img {
+    width: 50%;
+    height: 100%;
+}
+
