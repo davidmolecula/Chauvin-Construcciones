@@ -1,10 +1,5 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    letter-spacing: 0.5px;
-}
+
+
 :root{
     --color1:rgb(103,151,151);
     --color2:rgb(176,201,201);
@@ -13,12 +8,13 @@
     --color5:rgb(180,204,204);
     --black:rgb(33, 37, 41);
 }
-
+*{
+    font-family: Gotham;
+}
 /* ESTILO DE LA SECCION NOSOTROS*/
 
 .nosotros-section{
     position: relative;
-    margin-top: 50px; 
     background-image: url(../img/Nosotros/20190802_101130.jpg);
     background-size: cover;
     height: fit-content;
@@ -33,74 +29,111 @@
 }
 
 /* ESTILO Y ANIMACIONES DE "NOSOTROS" */
-.titulo-about-contenedora{
+.titulo-nosotros-contenedora{
     display: flex;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 4em;
 }
-.titulo-about{
+.titulo-nosotros{
     position: relative;
+    font-family: Gotham;
     height: 100px;
     text-transform: uppercase;
-    font-size: 100px;
-    font-weight: 700;
+    
+
 }
-.titulo-about-span-hidden{
+.titulo-nosotros-span-hidden{
 
     overflow: hidden;
 }
-.titulo-about-span-translate
+.titulo-nosotros-span-translate
 {
     transform: translateY(-120px);
     transition: all 1s;
 }
-.titulo-about-span-rotate{
+.titulo-nosotros-span-rotate{
     transform: rotateZ(-25deg);
     transition: all 1s;
     opacity: 0;
     color: white;
+    font-size: 100px;
+    font-weight: 800;
 }
-.titulo-about-span-translate-back{
+.titulo-nosotros-span-translate-back{
     transform: translate(0);
 }
-.titulo-about-span-rotate-back{
+.titulo-nosotros-span-rotate-back{
     transform: rotateZ(0);
     opacity: 1;
 }
 
 /* CONTENIDO DE LA SECCION: FILOSOFIA*/
 
+
 .nosotros-content-one{
-    margin-top: 5em;
-    font-size: 20px;
+    margin-top:11em;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
+    font-family: Garamond2;
 }
 
 .nosotros-content-one-title{
     font-size: 50px;
 }
 
+/*Seccion Nosotros dos */
+.nosotros-section-two{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+}
 .daniel-content{
-    
-    border: 1px solid red;
+    display: flex;
+
 }
 
-.about-team-der{
+.imagen2{
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s;
+
+}
+
+.nosotros-daniel-translate{
     transform: translateX(80px);
     opacity: 0;
     transition: all 2s ease;
     color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+.nosotros-content-valores>div{
+    margin-top: 100px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all 1s;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 10px;
 }
 
+
 .servicios{
-    margin-top:50px;
-    width: 100vw;
-    height: 100vh;
+    padding-top: 50px;
+    max-width: 100vw;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(6,6rem);
-
+    background-color: var(--black);
 }
 .servicio {
     width: 300px;
@@ -139,13 +172,13 @@
 .servicio-header{
     text-align: center;
 }
-.about-us-imagen-contenedora img {
-    width: 20rem;
+.nosotros-imagen-contenedora img {
+    width: 100%;
     object-fit: cover;
     opacity: 0.8;
     border-radius: 15px;
 }
-.about-us-imagen-contenedora {
+.nosotros-imagen-contenedora {
     grid-column: 7 / 11;
     grid-row: 2 / 6;
     width: 350px;
@@ -156,14 +189,25 @@
 /*REPONSIVE*/
 
 
-
+@media (max-width:768px){
+    .daniel-content{
+        flex-wrap: wrap;
+}
+.titulo-nosotros{
+    font-size: 80px;
+}
+}
 
 @media (max-width: 1000px){
+    .nosotros-daniel-translate{
+        transform: translateX(-200px);
+    }
 .servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    width: 100%;
 }
 .servicio {
     width: 30em;
@@ -172,6 +216,10 @@
 }
 @media (max-width: 1400px){
 
+    .servicios{
+        max-width: 100%;
+        overflow: hidden;
+    }
 .servicio:nth-child(1) {
     grid-column: 3 / 7;
 }
@@ -194,18 +242,10 @@
 
 
 
-@media (max-width: 500px){
 
-    .servicios{
-        row-gap: 2rem;
-    }
-.servicio {
-    width: 20rem;
-}
-}
 
 @media (max-width: 1500px){
-.about-us-imagen-contenedora {
+.nosotros-imagen-contenedora {
     grid-row: 3 / -1;
 }}
 
@@ -262,9 +302,10 @@
     opacity: 0;  
 }
 #imagen2{
+    border-radius: 10px;
     width: 360px;
 }
-.visible img, .atras div{
+.visible img{
     transform:translateX(0px);
     opacity: 0;
 }
@@ -273,11 +314,34 @@
     transform: translateX(100px);
     opacity: 0;
     transition: all 3s ease;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
 
-.atras>div{
+.atras,.atras>div{
     transform: translateX(0px);
     opacity: 1;
 }
+@media (max-width: 500px){
+
+    .titulo-nosotros-span-rotate{
+        font-size: 55px;
+        margin-top: 100px;
+    }
+    #imagen2{
+        width: 330px;
+    }
+    .row
+    {
+        width: 100%;
+    }
+    .servicios{
+            row-gap: 2rem;
+    }
+    .servicio {
+        width: 18rem;
+    }
+    }
