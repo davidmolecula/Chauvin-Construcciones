@@ -20,6 +20,8 @@ window.addEventListener('load',()=>{
     divRotate.classList.add('titulo-nosotros-span-rotate-back');
     divTranslate.classList.add('titulo-nosotros-span-translate-back');
 })
+
+/*
 const cargarServicio=(entradas,observador)=>{
     entradas.forEach(entrada=>{
         if(entrada.isIntersecting){
@@ -32,7 +34,7 @@ const cargarServicio=(entradas,observador)=>{
         }
     })
 }
-
+*/
 const loadText=(entradas,observador2)=>{
     entradas.forEach(entrada => {
         if(entrada.isIntersecting){
@@ -76,13 +78,13 @@ const loadValores=(entradas,observador4)=>{
     });
 }
 
-
+/*
 const observador=new IntersectionObserver(cargarServicio,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
     threshold:.3
 });
-
+*/
 const observador2=new IntersectionObserver(loadText,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
@@ -100,8 +102,9 @@ const observador4=new IntersectionObserver(loadValores,{
     rootMargin: '0px 0px 0px 0px',
     threshold:.4
 }) 
-
+/*
 observador.observe(servicio1);
+*/
 observador2.observe(nosotrosTexto1);
 observador3.observe(nosotrosDaniel)
 observador4.observe(nosotrosContentValores);

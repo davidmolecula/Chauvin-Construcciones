@@ -18,6 +18,19 @@
     src: url(../font/Gotham-Font/Gotham-Font/Gotham-Light.otf);
 }
 
+::-webkit-scrollbar {
+	background: white;
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: var(--black);
+	border-radius: 10px;
+	border: 1px solid grey;
+}
+
+
 
 .landing-hover {
     margin: 0;
@@ -55,14 +68,13 @@
 
 
 .carousel-caption{
-    bottom: 20%!important;
+    bottom: 5%!important;
     left:5%;
     width: 85vw;
     height: 60vh;
     display: flex;
     flex-direction: column;
     text-align: start;
-
 }
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
@@ -86,18 +98,6 @@ body{
 .section-padding{
     padding: 100px 0;
 }
-.carousel-inner::before{
-    content:'';
-    position:absolute;
-    width: 100%;
-    height:  100%;
-    top:0;
-    left: 0;
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
-}
-
-
 
 .carousel-caption{
     z-index:2;
@@ -224,3 +224,4 @@ body{
     text-transform: uppercase;
     color:lightgray;
 }
+
