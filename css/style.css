@@ -213,8 +213,11 @@ body{
     letter-spacing: 0.5px;
     line-height: 20px;
     text-decoration: none;
-    color:white;
+    color:lightgray;
 }
 .footer-copyright{
+    font-size: 13px;
     font-family: Gotham;
+    text-transform: uppercase;
+    color:lightgray;
 }
