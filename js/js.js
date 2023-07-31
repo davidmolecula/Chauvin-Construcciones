@@ -1,7 +1,7 @@
 
 const divTranslate=document.getElementById('div-translate');
 const divRotate=document.getElementById('div-rotate');
-const pantalla=window.innerWidth;
+const navBar=document.getElementById('navbar');
 
 const servicio1=document.getElementById('servicio1');
 const servicio2=document.getElementById('servicio2');
@@ -107,3 +107,6 @@ observador3.observe(nosotrosDaniel)
 observador4.observe(nosotrosContentValores);
 
 
+if(window.innerWidth<991){
+    navBar.classList.add('bg-dark');
+}
