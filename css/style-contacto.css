@@ -22,7 +22,6 @@ body::before{
     align-items: center;
     text-transform: uppercase;
     color:goldenrod;
-    
 }
 h1{
     font-size: 100px;
@@ -32,6 +31,7 @@ h1{
 
 .contacto-info{
     display: flex;
+    flex-wrap: wrap;
     height: 80vh;
     background-color:black;
     gap: 5%;
@@ -98,4 +98,32 @@ h1{
     text-align: start;
     font-size: 20px;
     padding: 10px;
+}
+
+@media (max-width:500px){
+    .contacto-h1-div{
+        height: 100vh;
+        
+    }
+    .titulo-nosotros-span-rotate{
+        margin-top: 0px;
+    }
+    .contacto-info{
+        height: 150vh;
+    }
+    .contacto-info>div{
+        width: 100%;
+        background-size: cover;
+    }
+    .contacto-info>div:nth-child(1){
+        margin-top: 50px;
+        height: 60vh;
+    }
+    .contacto-info>div:nth-child(2){
+        height: 90vh;
+        
+    }
+    .contacto-info-div-contenido-dos>p{
+        font-size: 30px;
+    }
 }
