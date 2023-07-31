@@ -39,8 +39,7 @@
     font-family: Gotham;
     height: 100px;
     text-transform: uppercase;
-    font-size: 100px;
-    font-weight: 800;
+    
 
 }
 .titulo-nosotros-span-hidden{
@@ -57,6 +56,8 @@
     transition: all 1s;
     opacity: 0;
     color: white;
+    font-size: 100px;
+    font-weight: 800;
 }
 .titulo-nosotros-span-translate-back{
     transform: translate(0);
@@ -109,8 +110,7 @@
     color: white;
     font-size: 15px;
     text-transform: uppercase;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(108, 108, 108,0.3);
+    background-color: rgba(0,0,0,0.8);
     border-radius: 5px;
     padding: 10px;
 }
@@ -122,8 +122,7 @@
     transform: translateX(-80px);
     opacity: 0;
     transition: all 1s;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(108, 108, 108,0.3);
+    background-color: rgba(0,0,0,0.8);
     border-radius: 5px;
     padding: 10px;
 }
@@ -319,8 +318,7 @@
     transform: translateX(100px);
     opacity: 0;
     transition: all 3s ease;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(108, 108, 108,0.3);
+    background-color: rgba(0,0,0,0.8);
     border-radius: 5px;
     padding: 10px;
 }

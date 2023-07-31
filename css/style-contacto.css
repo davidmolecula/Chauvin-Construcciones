@@ -1,3 +1,6 @@
+*{
+    font-family: Gotham;
+}
 body{
     background-image: url(../img/Nosotros/contacto.jpeg);
     background-attachment: fixed;
@@ -18,7 +21,7 @@ body::before{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color:white;
+    color:goldenrod;
     
 }
 h1{
@@ -36,26 +39,26 @@ h1{
     align-items: center;
 }
 
-.uno {
+.izquierda {
     display: flex;
     position: relative; 
     align-items: center;
     justify-content: center;
     background-image: url(../img/Proyecto/Proyecto-Azul/carrousel-proyectoAzul.jpg);
     background-size: contain;
+    background-attachment: fixed;
     width: 45%;
     height: 90%;
     z-index: 10;
-    background-color: white;
 }
-.uno::before{
+.izquierda::before{
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
-.contacto-info-div-contenido{
+.contacto-info-div-contenido, .contacto-info-div-contenido-dos{
     position: relative;
     z-index: 10;
     text-align: start;
@@ -63,9 +66,36 @@ h1{
     color: white;
     width: 90%;
     background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
 }
-.dos{
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45%;
     height: 90%;
-    background-color: grey;
+    background-image:url(../img/Proyecto/Proyecto-Azul/principal-proyectoAzul.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.contacto-info-div-contenido-dos{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.contacto-info-div-contenido-dos>p{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+.contacto-info-div-contenido-dos>p>span{
+    color: gold;
+}
+
+.contacto-info-div-contenido-dos p:nth-child(2),.contacto-info-div-contenido-dos p:nth-last-child(1){
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
 }
