@@ -204,15 +204,40 @@ body {
 .project-description.visible {
     opacity: 1;
     transform: none;
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease; /* Ajustamos la duración de la transición a 0.5 segundos */
 }
 
 .project-image {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30%);
 }
 
 .project-description {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(50%);
+}
+
+
+.project-img_column{
+    column-count: 2;
+    
+}
+
+
+.project-img_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-image_2
+{
+    width: 50%; /* Puedes ajustar el ancho de las imágenes */
+    margin: 1%;
+}
+
+
+#project-image_2 img {
+    width: 100%;
+    height: auto;
 }
