@@ -68,7 +68,6 @@
 
 
 .carousel-caption{
-    bottom: 5%!important;
     left:5%;
     width: 85vw;
     height: 60vh;
@@ -86,7 +85,6 @@
     letter-spacing: 0.5px;
     transition: all .5s ease;
     width: 100%;
-    height: 15vh;
 }
 .carousel-caption:hover .landing-hover{
     opacity: 1;
