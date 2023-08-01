@@ -10,13 +10,7 @@ body{
     position: relative;
 }
 
-body::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-}
+
 
 .contact-container{
     display: flex;
@@ -26,7 +20,7 @@ body::before{
     padding-top: 100px;
 }
 
-#contacto-img{
+#contact-img{
     width: 100%;
 }
 .derecha{
@@ -34,7 +28,7 @@ body::before{
     height: 100vh;
     padding: 50px;
 }
-.contacto-info-div .derecha{
+.contact-info-div .derecha{
     display: flex;
 }
 .contact-data-container{
@@ -66,31 +60,39 @@ body::before{
 
 
 @media (max-width:500px){
-    .contacto-h1-div{
+
+    .contact-container{
+    height: 180vh;
+    }
+    .contact-h1-div{
         height: 100vh;
         
     }
     .titulo-nosotros-span-rotate{
         margin-top: 0px;
+        font-size: 45px;
     }
-    .contacto-info{
+    .contact-info{
         height: 150vh;
     }
-    .contacto-info>div{
+    .contact-info>div{
         width: 100%;
+
         background-size: cover;
     }
-    .contacto-info>div:nth-child(1){
+    .contact-info>div:nth-child(1){
         margin-top: 50px;
         height: 60vh;
     }
-    .contacto-info>div:nth-child(2){
+    .contact-info>div:nth-child(2){
         height: 90vh;
         
     }
-    .contacto-info-div-contenido-dos>p{
+    .contact-info-div-contenido-dos>p{
         font-size: 30px;
     }
+.contact-h1-div{
+height: fit-content;}
 }
 
 @media (max-width:991px){

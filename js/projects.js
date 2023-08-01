@@ -1,4 +1,6 @@
 // Definimos un objeto que mapea los ID de las imágenes con sus URLs correspondientes
+
+
 const projectURLs = {
     "image-box-1": "Projects/Projects_Azul.html",
     "image-box-3": "Projects/Projects_Las_Margaritas.html",
@@ -137,3 +139,4 @@ window.addEventListener("scroll", function () {
   }
   prevScrollPosition = currentScrollPosition;
 });
+

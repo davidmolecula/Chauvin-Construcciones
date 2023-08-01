@@ -84,7 +84,7 @@
     font-family: Gotham;
     letter-spacing: 0.5px;
     transition: all .5s ease;
-    width: 100%;
+    width: 90%;
 }
 .carousel-caption:hover .landing-hover{
     opacity: 1;
