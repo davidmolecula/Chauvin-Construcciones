@@ -6,77 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../Chauvin-Construcciones-2.1/Chauvin-Construcciones-2/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../font/garamond-premier-pro-display_PsgQt/Garamond Premier Pro Display/Garamond Premier Pro Display.otf">
     <title>Chauvin Arquitectura</title>
-    <style>
-        /* Estilos para las secciones de proyectos */
-.project-section {
-    /* ... */
-    position: relative;
-    overflow: hidden;
-}
-
-.project-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #a71515; /* Color del padding del proyecto */
-    z-index: -1;
-    opacity: 0; /* Inicialmente ocultamos el padding */
-    transition: opacity 0.3s; /* Agregamos una transición para suavizar el cambio de opacidad */
-}
-
-.project-section:hover::before {
-    opacity: 1; /* Mostramos el padding al hacer hover */
-}
-
-.project-img {
-    /* ... */
-    transition: transform 0.3s; /* Agregamos una transición para suavizar el aumento de tamaño */
-}
-
-.project-section:hover .project-img {
-    transform: scale(1.1); /* Aumentamos el tamaño de la imagen al hacer hover */
-}
-
-.project-name {
-    /* ... */
-    transform: translateY(100%); /* Inicialmente ocultamos el nombre del proyecto */
-    transition: transform 0.3s; /* Agregamos una transición para suavizar la aparición/desaparición */
-}
-
-.project-section:hover .project-name {
-    transform: translateY(0); /* Mostramos el nombre del proyecto al hacer hover */
-}
-
-    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../index.html">C<div class="landing-hover">hauvin Arquitectura
-                            </div> </a></a>
+                        <a class="nav-link text-light" href="../index.html">Chauvin Arquitectura
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../About-us.html">S<div class="landing-hover">obre Nosotros
+                        <a class="nav-link text-light" href="../nosotros.html">N<div class="landing-hover">osotros
                             </div></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../projects2.html">P<div class="landing-hover">royectos</div>
+                        <a class="nav-link text-light" href="../projects.html">P<div class="landing-hover">royectos</div>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -86,19 +44,157 @@
             </div>
         </div>
     </nav>
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="project-section">
-            <a href="proyecto1.html">
-                <img src="../img/3.jpeg" alt="" class="project-img">
-                <div class="project-name">Nombre del Proyecto 1</div>
-            </a>
+
+    <div class="project-info">
+        <h1>Proyecto Las Margaritas</h1>
+        <div class="project-column">
+            <div class="left-column_1">
+                <p><strong>Área:</strong> [Área del proyecto]</p>
+                <p><strong>Cliente:</strong> [Nombre del cliente]</p>
+            </div>
+
+            <div class="right-column_1">
+                <p><strong>Ubicación:</strong>  Barrio Parque Las Margaritas</p>
+                <p><strong>Estado:</strong> Finalizada</p>
+            </div>
+        </div>    
+    </div>
+
+
+    <div class="project-container">
+    
+        <div class="project-image">
+            <img src="../img/Proyecto/Proyecto-Las_Margaritas/Principal.jpg" alt="principal-proyecto-las-margaritas" class="grayscale">
+        </div>
+
+        <div class="project-description">
+            <p>
+                Las Margaritas  fue una obra en la que se realizo un proceso de modificacion y ampliacion
+            </p>
         </div>
     </div>
-    
+
+    <div class="project-container">
+        <div class="project-img_column">
+            <div class="project-image" id="project-image_2">
+                <img src="../img/Proyecto/Proyecto-Las_Margaritas/casa_sin_reformar.jpg" alt="Imagen del Proyecto" class="grayscale">
+            </div>
+            <div class="project-image" id="project-image_2">
+                <img src="../img/Proyecto/Proyecto-Las_Margaritas/boceto.jpg" alt="Imagen del Proyecto" class="grayscale">
+            </div>
+        </div>
+        <div class="project-description">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, rerum amet! Ipsum commodi, placeat suscipit rem dolores, 
+                exercitationem iusto velit delectus quasi cumque obcaecati, unde dolore aperiam veniam nihil porro.
+            </p>
+        </div>
+    </div>
+
+
+<div class="project-container">
+    <div class="project-image">
+        <img src="../img/Proyecto/Proyecto-Las_Margaritas/segundo_piso_contruccion.jpg" alt="Imagen del Proyecto" class="grayscale" > 
+    </div>
+    <div class="project-description">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptatem magni adipisci nostrum enim, aut praesentium modi 
+            numquam, fuga dolorem facilis quo! Sit, repudiandae accusantium. A magnam ipsa quam iusto.
+        </p>
+    </div>
+</div>
+
+<div class="project-container">
+    <div class="project-img_column">
+        <div class="project-image" id="project-image_2">
+            <img src="../img/Proyecto/Proyecto-Las_Margaritas/frente_antes.jpg" alt="Imagen del Proyecto" class="grayscale">
+        </div>
+        <div class="project-image" id="project-image_2">
+            <img src="../img/Proyecto/Proyecto-Las_Margaritas/frente_despues.jpg" alt="Imagen del Proyecto" class="grayscale">
+        </div>
+    </div>
+    <div class="project-description">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, rerum amet! Ipsum commodi, placeat suscipit rem dolores, 
+            exercitationem iusto velit delectus quasi cumque obcaecati, unde dolore aperiam veniam nihil porro.
+        </p>
+    </div>
+</div>
+
+<div class="project-container">
+    <div class="project-image">
+        <img src="../img/Proyecto/Proyecto-Las_Margaritas/frente_despues_2.jpg" alt="Imagen del Proyecto" class="grayscale" > 
+    </div>
+    <div class="project-description">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptatem magni adipisci nostrum enim, aut praesentium modi 
+            numquam, fuga dolorem facilis quo! Sit, repudiandae accusantium. A magnam ipsa quam iusto.
+        </p>
+    </div>
+</div>
+
+<div class="project-container">
+    <div class="project-img_column">
+        <div class="project-image" id="project-image_2">
+            <img src="../img/Proyecto/Proyecto-Las_Margaritas/escalera_construccion.jpg" alt="Imagen del Proyecto" class="grayscale">
+        </div>
+        <div class="project-image" id="project-image_2">
+            <img src="../img/Proyecto/Proyecto-Las_Margaritas/escalera_final.jpg" alt="Imagen del Proyecto" class="grayscale">
+        </div>
+    </div>
+    <div class="project-description">
+        <p>
+                    La cocina, el corazón del hogar. 
+            Espacio de encuentro donde confluyen todos los sentidos.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="project-container">
+    <div class="project-image">
+        <img src="../img/Proyecto/Proyecto-Las_Margaritas/frente_final.jpeg" alt="Imagen del Proyecto" class="grayscale" > 
+    </div>
+    <div class="project-description">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptatem magni adipisci nostrum enim, aut praesentium modi 
+            numquam, fuga dolorem facilis quo! Sit, repudiandae accusantium. A magnam ipsa quam iusto.
+        </p>
+    </div>
+</div>
+
+<footer class="bg-dark p-5"  class="footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="text-white">
+                    <p class="text-white">Logo Chauvin</p>
+                </div>
+            </div>
+            <div class="col text-white "><a class="footer-link" href="">direccion</a></div>
+            <div class="col text-white "><a class="footer-link" href="">LOS ANGELES</a></div>
+            <div class="col text-white ">
+                <div class="row">
+                    <div class="col"><a class="footer-link" href="">Facebook</a></div>
+                </div>
+                <div class="row">
+                    <div class="col"><a class="footer-link" href="">Instagram</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-white mt-5">Todos los derechos reservados @chauvin</div>
+        </div>
+    </div>
+</footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous">
     </script>
+     <script src="../js/projects.js"></script>
 </body>
 
 </html>
