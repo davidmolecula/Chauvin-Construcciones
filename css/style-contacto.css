@@ -1,11 +1,15 @@
 *{
     font-family: Gotham;
+    text-transform: uppercase;
+    box-sizing: border-box;
 }
+
 body{
-    background-image: url(../img/Nosotros/contacto.jpeg);
+    background-color:var(--black);
     background-attachment: fixed;
     position: relative;
 }
+
 body::before{
     content: '';
     position: absolute;
@@ -14,91 +18,52 @@ body::before{
     background-color: rgba(0,0,0,0.3);
 }
 
-
-.contacto-h1-div{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color:goldenrod;
-}
-h1{
-    font-size: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-.contacto-info{
+.contact-container{
     display: flex;
     flex-wrap: wrap;
-    height: 80vh;
-    background-color:black;
-    gap: 5%;
-    justify-content: center;
-    align-items: center;
+    max-width: 100vw;
+    overflow: hidden;
+    padding-top: 100px;
 }
 
-.izquierda {
-    display: flex;
-    position: relative; 
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/Proyecto/Proyecto-Azul/carrousel-proyectoAzul.jpg);
-    background-size: contain;
-    background-attachment: fixed;
-    width: 45%;
-    height: 90%;
-    z-index: 10;
-}
-.izquierda::before{
-    content: '';
-    position: absolute;
+#contacto-img{
     width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.contacto-info-div-contenido, .contacto-info-div-contenido-dos{
-    position: relative;
-    z-index: 10;
-    text-align: start;
-    padding: 20px;
-    color: white;
-    width: 90%;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 5px;
 }
 .derecha{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.contacto-info-div .derecha{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    height: 90%;
-    background-image:url(../img/Proyecto/Proyecto-Azul/principal-proyectoAzul.jpg);
-    background-size: contain;
-    background-attachment: fixed;
 }
-
-.contacto-info-div-contenido-dos{
+.contact-data-container{
+    color: white;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    height: 90%;
+    flex-wrap: wrap;
+    border-top:1px solid grey;
+}
+.contact-data, .contact-data-text{
+    color: white;
+    font-size: 12px;
+    padding-bottom: 100px;
+}
+.contact-data-column{
+    width: 33%;
+    font-size: 12px;
+    padding-top: 10px;
 }
 
-.contacto-info-div-contenido-dos>p{
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-}
-.contacto-info-div-contenido-dos>p>span{
-    color: gold;
+.titulo-nosotros-span-rotate{
+    font-size: 60px;
 }
 
-.contacto-info-div-contenido-dos p:nth-child(2),.contacto-info-div-contenido-dos p:nth-last-child(1){
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
+.footer-link{
+    position: relative;
+    z-index: 5;
 }
+
 
 @media (max-width:500px){
     .contacto-h1-div{
@@ -125,5 +90,17 @@ h1{
     }
     .contacto-info-div-contenido-dos>p{
         font-size: 30px;
+    }
+}
+
+@media (max-width:991px){
+    .contact-img-div{
+        width: 100%;
+    }
+    .contact-info-div{
+        width: 100%;
+    }
+    .contact-data-column{
+        width: 100%;
     }
 }

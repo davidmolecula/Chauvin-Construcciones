@@ -125,7 +125,9 @@
     padding: 10px;
 }
 
-
+.services{
+    border: 1px solid white;
+}
 .servicios{
     padding-top: 50px;
     max-width: 100vw;
