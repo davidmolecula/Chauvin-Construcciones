@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:var(--black);
+    background-color:rgb(15,15,15);
     background-attachment: fixed;
     position: relative;
 }
@@ -64,20 +64,15 @@ body{
     .contact-container{
     height: 180vh;
     }
-    .contact-h1-div{
-        height: 100vh;
-        
-    }
     .titulo-nosotros-span-rotate{
         margin-top: 0px;
         font-size: 45px;
     }
     .contact-info{
-        height: 150vh;
+        height: 140vh;
     }
     .contact-info>div{
         width: 100%;
-
         background-size: cover;
     }
     .contact-info>div:nth-child(1){
@@ -92,10 +87,15 @@ body{
         font-size: 30px;
     }
 .contact-h1-div{
-height: fit-content;}
+height: fit-content;
+}
+.contact-data-column{
+    width: 100%;
 }
 
-@media (max-width:991px){
+}
+
+@media only screen and (min-width:500px) and (max-width:991px){
     .contact-img-div{
         width: 100%;
     }
@@ -104,5 +104,12 @@ height: fit-content;}
     }
     .contact-data-column{
         width: 100%;
+    }
+    .contact-h1-div{
+        height: 20vh;
+    }
+
+    .derecha{
+        height: 150vh;
     }
 }

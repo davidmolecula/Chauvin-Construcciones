@@ -1,3 +1,4 @@
+
 :root{
     --color1:rgb(103,151,151);
     --color2:rgb(176,201,201);
@@ -19,13 +20,13 @@
 }
 
 ::-webkit-scrollbar {
-	background: white;
+	background: #151515;
     width: 5px;
 }
 
 
 ::-webkit-scrollbar-thumb {
-	background: var(--black);
+	background: #C4AD78;
 	border-radius: 10px;
 	border: 1px solid grey;
 }
@@ -39,9 +40,10 @@
     text-transform: uppercase;
     font-family: Gotham;
     letter-spacing: 0.5px;
-    line-height: 20px;
+    
     opacity: 0;
     transition: all .5s ease;
+    
 }
 
 .navbar:hover .landing-hover{
@@ -107,6 +109,7 @@ body{
     font-family: Gotham;
     letter-spacing: 0.5px;
     line-height: 20px;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-brand{
@@ -125,6 +128,9 @@ body{
 
 .navbar-light .navbar-nav .navbar-link{
     color: #000;
+}
+.navbar-black{
+    background-color: #151515;
 }
 
 .w-100{
@@ -152,6 +158,50 @@ body{
 .team .card{
     box-shadow:15px 15px 40px rgba(0,0,0,0.15);
 }
+.foter{
+    background-color: #151515;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.foter-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: 60px;
+    padding-top:40px;
+
+}
+.foter-col{
+    width: calc(100%/4);
+}
+.foter-col:nth-child(2){
+    margin-left:100px ;
+}
+.foter-col:nth-child(3){
+    text-align: center;
+}
+.foter-col:nth-child(4){
+    text-align: end;
+}
+.foter-copyright{
+    color: lightgrey;
+    font-family: Gotham;
+    text-transform: uppercase;
+    font-size: .7rem;
+    
+    padding-top:50px;
+}
+
+
 @media only screen and (min-width:768px) and (max-width:991px){
     .navbar-toggler-icon{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,28255, 28255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -172,6 +222,38 @@ body{
     .img-area img{
         width: 100%;
     }
+    .foter-col{
+        width: 100%;
+    }
+    .foter-container{
+        justify-content: start;
+        padding-left:20px;
+    }
+    .foter-col{
+        width: 100%;
+        text-align: start;
+        padding-top:20px;
+    }
+    .foter-copyright{
+        text-align: start;
+        padding-top: 20px;
+    }
+
+    .foter-col{
+        width: 100%;
+        text-align: start;
+        padding-top:20px;
+    }
+    .foter-col:nth-child(2){
+        margin-left:0 ;
+    }
+    .foter-col:nth-child(3){
+        text-align: start;
+    }
+    .foter-col:nth-child(4){
+        text-align: start;
+    }
+    
 }
 @media only screen and (max-width:767px){
 
@@ -191,7 +273,6 @@ body{
         word-break: keep-all;
     }
     
-
     .card{
         margin-bottom:30px;
     }
@@ -201,14 +282,41 @@ body{
     .about-text{
         padding-top:50px;
     }
+
+    .foter-container{
+        justify-content: start;
+        padding-left:20px;
+    }
+    .foter-copyright{
+        text-align: start;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    .foter-col{
+        width: 100%;
+        text-align: start;
+        padding-top:20px;
+    }
+    .foter-col:nth-child(2){
+        margin-left:0 ;
+    }
+    .foter-col:nth-child(3){
+        text-align: start;
+    }
+    .foter-col:nth-child(4){
+        text-align: start;
+    }
 }
 
 
 
 
-
+.footer-text-start{
+    text-align: start;
+}
 .footer-link{
-    font-size: 13px;
+    font-size: .7rem;
     text-transform: uppercase;
     font-family: Gotham;
     letter-spacing: 0.5px;
@@ -216,10 +324,8 @@ body{
     text-decoration: none;
     color:lightgray;
 }
-.footer-copyright{
-    font-size: 13px;
-    font-family: Gotham;
-    text-transform: uppercase;
-    color:lightgray;
+
+.footer-link:hover{
+    color: #C4AD78;
 }
 
