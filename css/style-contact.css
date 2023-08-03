@@ -40,8 +40,14 @@ body{
 }
 .contact-data, .contact-data-text{
     color: white;
-    font-size: 12px;
     padding-bottom: 100px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 200;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    text-transform: none;
+    font-family: Garamond2;
 }
 .contact-data-column{
     width: 33%;
@@ -113,4 +119,7 @@ height: fit-content;
     .derecha{
         height: 150vh;
     }
+}
+.text-light:hover{
+    color: #C4AD78!important;
 }

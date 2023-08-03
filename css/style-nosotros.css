@@ -9,7 +9,6 @@
     --black:rgb(33, 37, 41);
 }
 *{
-    font-family: Gotham;
     color: black;
 }
 
@@ -66,23 +65,29 @@
 }
 .nosotros-content {
     height: 70vh;
-    border: 1px solid yellow;
+    
 }
 .nosotros-content-one{
     height: 100%;
-    border: 1px solid black;
 }
 .nosotros-content-one, .nosotros-daniel-translate, .nosotros-content-valores>div, .nosotros-services{
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     text-align: justify;
-    font-size: Garamond2;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    font-family: Garamond2;
 }
 
 
 .nosotros-content-one-title{
     font-size: 50px;
     text-transform: uppercase;
+    font-weight: bold;
+    font-family: Gotham;
+}
+.miembros{
     padding-left: 20px;
 }
 
@@ -96,7 +101,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 90vh;
-    border: 1px solid red;
+    
 }
 .nosotros-daniel-translate div{
     padding-top: 20px;
@@ -104,6 +109,7 @@
 }
 h4{
     text-transform: uppercase;
+    font-family: Gotham;
 }
 
 .imagen2{
@@ -111,6 +117,12 @@ h4{
     transform: translateX(-80px);
     transition: all 1s;
     width: 330px;
+    transition: all .4s ease-in-out;
+    filter: grayscale(1);
+}
+
+.imagen2:hover{
+    filter: grayscale(0);
 }
 
 .nosotros-daniel-translate{
@@ -122,8 +134,13 @@ h4{
 }
 .nosotros-content-valores{
     height: 70vh;
-    border: 1px solid purple;
+    font-size: 20px;
+    color: black;
     text-align: justify;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    font-family: Garamond2;
 }
 .nosotros-content-valores>div{
     margin-top: 100px;
@@ -261,6 +278,11 @@ h4{
     opacity: 0;
     transition: all 3s ease;  
     border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    font-family: Garamond2;
 }
 
 
@@ -302,4 +324,11 @@ h4{
 
     .bold{
         font-weight: bold;
+    }
+
+    .footer-link{
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 15px;
     }

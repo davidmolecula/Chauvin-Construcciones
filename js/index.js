@@ -22,3 +22,36 @@ Con la sostenibilidad ambiental, Social y económica como eje.
 </div>`;
 navBarLogo.innerHTML='<img src="icons/footer.jpeg" width="100px" alt="">';
 }
+
+
+
+        let redirectTimeout;
+        let loaderElement = document.getElementById("loader");
+
+        function showProgressBar() {
+            const progressBarContainer = document.querySelector(".progress-container");
+            progressBarContainer.style.display = "block";
+        }
+
+        function hideProgressBar() {
+            const progressBarContainer = document.querySelector(".progress-container");
+            progressBarContainer.style.display = "none";
+        }
+
+        function redirectToAnotherPageWithDelay(delayTime) {
+            loaderElement.classList.add("loader2"); // Iniciar animación del loader
+            redirectTimeout = setTimeout(function () {
+                window.location.href = "../projects.html"; 
+            }, delayTime);
+        }
+
+        
+
+        // Evento de scroll para verificar si ha llegado al pie de página
+
+
+
+                    showProgressBar();
+                    redirectToAnotherPageWithDelay(4000);
+        
+
