@@ -93,51 +93,87 @@ window.addEventListener('scroll', animateElementsOnScroll);
 
 
 
- // Variables para controlar la redirección
+
+
+
+
+
+
 let reachedEndOfPage = false;
-let redirectTimeout;
-let loaderElement = document.getElementById("loader");
+        let redirectTimeout;
+        let loaderElement = document.getElementById("loader");
 
-// Función para redirigir a otra página después de un tiempo especificado
-function redirectToAnotherPageWithDelay(delayTime) {
-  loaderElement.classList.add("loader2"); // Iniciar animación del loader
-  redirectTimeout = setTimeout(function () {
-    // Aquí cambia "otra-pagina.html" por la URL de la página a la que quieres redirigir.
-    window.location.href = "../projects.html";
-  }, delayTime);
+        function showProgressBar() {
+            const progressBarContainer = document.querySelector(".progress-container");
+            progressBarContainer.style.display = "block";
+        }
+
+        function hideProgressBar() {
+            const progressBarContainer = document.querySelector(".progress-container");
+            progressBarContainer.style.display = "none";
+        }
+
+        function redirectToAnotherPageWithDelay(delayTime) {
+            loaderElement.classList.add("loader2"); // Iniciar animación del loader
+            redirectTimeout = setTimeout(function () {
+                window.location.href = "../projects.html"; 
+            }, delayTime);
+        }
+
+        function cancelRedirect() {
+            clearTimeout(redirectTimeout);
+            reachedEndOfPage = false;
+            hideProgressBar();
+        }
+
+        // Evento de scroll para verificar si ha llegado al pie de página
+        window.addEventListener("scroll", function () {
+            const footer = document.getElementById("footer");
+            const footerPosition = footer.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (footerPosition <= windowHeight + 1) {
+                if (!reachedEndOfPage) {
+                    reachedEndOfPage = true;
+                    showProgressBar();
+                    redirectToAnotherPageWithDelay(4000);
+                }
+            } else {
+                reachedEndOfPage = false;
+                cancelRedirect();
+            }
+        });
+
+
+
+
+// Función para verificar si un elemento está en el viewport
+function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
 }
 
-// Función para cancelar la redirección si el usuario se desplaza hacia arriba
-function cancelRedirect() {
-  clearTimeout(redirectTimeout);
-  reachedEndOfPage = false;
+// Función para activar la animación de deslizamiento al aparecer en el viewport
+function activateImageAnimations() {
+    var images = document.querySelectorAll('.imagen_animada');
+    images.forEach(function (image) {
+        if (isElementInViewport(image)) {
+            image.classList.add('animate');
+        }
+    });
 }
 
-// Evento de scroll para verificar si ha llegado al pie de página
-window.addEventListener("scroll", function () {
-  const footer = document.getElementById("footer");
-  const footerPosition = footer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
+// Evento para activar la animación al hacer scroll
+window.addEventListener('scroll', function () {
+    activateImageAnimations();
+});
 
-  // Ajusta 50 al número de píxeles que desees que falten para llegar al pie de página.
-  if (footerPosition <= windowHeight + 1) {
-    // Solo redirigir si se ha alcanzado el final de la página y no hay una redirección pendiente
-    if (!reachedEndOfPage) {
-      reachedEndOfPage = true;
-      // Establece el tiempo de espera en milisegundos (por ejemplo, 5000 para 5 segundos)
-      redirectToAnotherPageWithDelay(4000);
-    }
-  } else {
-    // Restablecer la bandera cuando se aleja del pie de página
-    cancelRedirect();
-  }
-
-  // Verificar si el usuario está haciendo scroll hacia arriba y cancelar la redirección
-  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  if (currentScrollPosition < prevScrollPosition) {
-    cancelRedirect();
-  }
-  prevScrollPosition = currentScrollPosition;
+// Evento para activar la animación al cargar la página
+window.addEventListener('load', function () {
+    activateImageAnimations();
 });
 
 
