@@ -44,6 +44,8 @@
     transition: all .5s ease;
 }
 
+
+
 .navbar:hover .landing-hover{
     opacity:1;
 }
