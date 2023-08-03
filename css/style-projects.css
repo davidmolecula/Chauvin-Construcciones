@@ -483,7 +483,6 @@ color: #000;
 
   .cases
 {
-    
     padding-top: 145px;
     min-height: 100vh;
     position: relative;
@@ -600,16 +599,11 @@ color: #000;
     object-position: center;
 }
 
-.cases .list__item:first-child .item__block[data-v-a383d858]:nth-child(2) {
-    float: right;
-    margin-right: 4.6vw;
-    width: 29.6%;
-    margin-top: -200px;
-}
 
-.cases .list__item:first-child .item__block[data-v-a383d858] {
-    display: block;
-}
+
+
+
+
 .cases .item__block[data-v-a383d858]:nth-child(2) {
     float: right;
     margin-right: 4.6vw;
@@ -1175,3 +1169,15 @@ color: #000;
     height: 100px;
 }
 
+/* Agrega esta regla CSS para las imágenes */
+.imagen_animada {
+  opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+  transition: opacity 1s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+}
+
+
+/* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+.imagen_animada.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
