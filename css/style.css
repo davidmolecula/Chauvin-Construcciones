@@ -1,10 +1,6 @@
 
 :root{
-    --color1:rgb(103,151,151);
-    --color2:rgb(176,201,201);
-    --color3:rgb(53,78,78);
-    --color4:rgb(132,156,148);
-    --color5:rgb(180,204,204);
+
     --black:rgb(33, 37, 41);
 }
 *{
@@ -73,6 +69,7 @@
 
 .carousel-caption{
     left:5%;
+    top: 20%;
     width: 85vw;
     height: 60vh;
     display: flex;
@@ -80,11 +77,14 @@
     text-align: start;
     font-weight: 800;
 }
+.carousel-caption img {
+    width: 200px;
+}
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
 }
 .carousel-caption-hover{ 
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-family: Gotham;
     letter-spacing: 0.5px;
@@ -200,7 +200,7 @@ body{
     font-family: Gotham;
     text-transform: uppercase;
     font-size: .7rem;
-    
+    text-align: justify;
     padding-top:50px;
 }
 

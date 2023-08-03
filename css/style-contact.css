@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:rgb(15,15,15);
+    background-color:#151515;
     background-attachment: fixed;
     position: relative;
 }
@@ -51,6 +51,7 @@ body{
 
 .titulo-nosotros-span-rotate{
     font-size: 60px;
+    color: white;
 }
 
 .footer-link{

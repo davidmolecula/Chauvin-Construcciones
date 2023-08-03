@@ -1,8 +1,6 @@
 
 const divTranslate=document.getElementById('div-translate');
 const divRotate=document.getElementById('div-rotate');
-
-
 const servicio1=document.getElementById('servicio1');
 const servicio2=document.getElementById('servicio2');
 const servicio3=document.getElementById('servicio3');
@@ -56,11 +54,11 @@ const loadDaniel=(entradas,observador2)=>{
     entradas.forEach(entrada => {
         if(entrada.isIntersecting){
             entrada.target.classList.add('atras');
-            imagen2.classList.add('atras');
+            nosotrosDaniel.classList.add('atras');
         }
         else{
             entrada.target.classList.remove('atras');
-            imagen2.classList.remove('atras');
+            nosotrosDaniel.classList.remove('atras');
         }
         
     });
@@ -74,7 +72,6 @@ const loadValores=(entradas,observador4)=>{
         else{
             entrada.target.classList.remove('atras');
         }
-        
     });
 }
 
@@ -106,6 +103,6 @@ const observador4=new IntersectionObserver(loadValores,{
 observador.observe(servicio1);
 */
 observador2.observe(nosotrosTexto1);
-observador3.observe(nosotrosDaniel)
+observador3.observe(imagen2)
 observador4.observe(nosotrosContentValores);
 
