@@ -444,8 +444,8 @@ color: #000;
 
 
 .img-fluid {
-    width: 100%;
-    height: auto;
+    max-width: 100%; 
+     height: auto;
 }
 
 
@@ -1181,3 +1181,30 @@ color: #000;
     transform: translateY(0);
     opacity: 1;
 }
+
+
+
+
+/*
+
+.item__info_1 {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 45.9%;
+    text-align: initial;
+    margin-top: 14px;
+}
+
+.item__name_1 {
+    font: 700 14px/22px "Fatum", sans-serif;
+    color: #fdfdfd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 19px; 
+    position: absolute;
+    top: 8%; 
+    right: 20%; 
+    margin: 0;
+}
+*/
+
