@@ -1,3 +1,6 @@
+
+
+
 // Definimos un objeto que mapea los ID de las imágenes con sus URLs correspondientes
 
 
@@ -238,3 +241,13 @@ window.addEventListener('load', function () {
 });
 
 
+
+
+//<![CDATA[ esto es de la barra de carga 
+    document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+            console.log(document.readyState);
+            document.getElementById("PreLoaderBar").style.display = "none";
+        }
+    }
+//]]>
