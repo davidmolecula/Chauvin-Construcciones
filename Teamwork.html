@@ -27,25 +27,17 @@
     width: 50%;
 }
 
-.contenedor_img_2 img{
+.contenedor_img_2{
     height: 20%;
     width: 20%;
-    display: inline-block;
     padding-left: 1%;
     padding-bottom: 1%;
     padding-top: 1%;
     padding-right: 1%;
 }
-.contenedor_img_2  .img_p p{
-    height: 20%;
-    width: 20%;
-    display:inline-flex;
-    flex-direction: column;
-    column-count: 2; 
-    padding-left: 1%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    padding-right: 1%;
+.contenedor_img_2 img {
+    max-width: 100%;
+    margin-bottom: 10px; /* Añadir un margen inferior para separar las imágenes de los párrafos */
 }
 
 
@@ -57,9 +49,67 @@
     padding-right: 1%;
 }
 
+
+
 .img-fluid{
     width: 50%;;
 }
+
+.contenedor_img {
+    text-align: center;
+  }
+
+  .contenedor_img_3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8%;
+    margin-top: 20px;
+  }
+
+  .img_p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link,
+  .git {
+    margin: 5px 0;
+  }
+  .contenedor_img_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.img_p_2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.img_2 {
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.link1 p,
+.git1 p {
+    margin: 0;
+    white-space: nowrap; /* Evita el salto de línea */
+}
+
+
 
 
 </style>
@@ -69,19 +119,57 @@
         <img src="img/grupal.png" alt="Imagen grupal" class="img-fluid">
     </div>
 
-
     <section id="team" class="team section-padding">
-        <div class="contenedor_img_2">
+        <div class="contenedor_img_3">
             <div class="img_p">
-                <img src="img/grupal.png" alt="Imagen grupal">
+                <p class="link"> Linkedin: asdasd</p>
+                <p class="git"> Github: asdasd</p>
+            </div>
+            <div class="img_p">
                 <p class="link"> Linkedin:asdasd</p>
                 <p class="git"> Github: asdasd</p>
             </div>
-            <div>
-                <img src="img/grupal.png" alt="Imagen grupal">
+            <div class="img_p">
+                <p class="link"> Linkedin:asdasd</p>
+                <p class="git"> Github: asdasd</p>
             </div>
-            <div>
-                <img src="img/grupal.png" alt="Imagen grupal">
+        </div>
+    </section>
+
+    <section id="team" class="team section-padding">
+        <div class="contenedor_img_2">
+            <div class="img_p_2" >
+                <img src="img/grupal.png" alt="Imagen grupal" class="img_2">
+                <div class="textos">
+                    <div class="link1">
+                        <p>Linkedin: asdasd</p>
+                    </div>
+                    <div class="git1">
+                        <p>Github: asdasd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_p_2" >
+                <img src="img/grupal.png" alt="Imagen grupal" class="img_2">
+                <div class="textos">
+                    <div class="link1">
+                        <p>Linkedin: asdasd</p>
+                    </div>
+                    <div class="git1">
+                        <p>Github: asdasd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_p_2" >
+                <img src="img/grupal.png" alt="Imagen grupal" class="img_2">
+                <div class="textos">
+                    <div class="link1">
+                        <p>Linkedin:asdasd</p>
+                    </div>
+                    <div class="git1">
+                        <p>Github:asdasd</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
