@@ -12,6 +12,9 @@
 body{
     cursor:crosshair;
 }
+a{
+    cursor:crosshair; /*YO LO AGREGUE DE GEDE BORRAR SI NO GUSTA O CAMBIAR POR OTRO MAS COPADO */
+}
 @font-face
 {
     font-family: Gotham;

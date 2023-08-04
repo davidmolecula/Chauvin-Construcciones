@@ -2,6 +2,9 @@
 {
     font-family: Garamond2;
     src: url(../font/garamond-premier-pro-display_PsgQt/Garamond\ Premier\ Pro\ Display/);
+
+    font-family: Gotham1;
+    src: url(../font/Gotham-Font/Gotham-Font/Gotham-Light.otf);
 }
 
 body {
@@ -10,8 +13,16 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #000000;
+    
+}
+.image-box
+{
+    cursor:crosshair;
 }
 
+.text-light:hover{
+    color: #C4AD78!important;
+}
 /*2do nivel */
 
 .container_2,.container_1 {
@@ -93,7 +104,6 @@ padding-left: 0.2%;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s;
-    
     text-align: center;
     line-height: 24px;
     
@@ -101,7 +111,7 @@ padding-left: 0.2%;
 
 .project-title h2 {
     color: #000;
-    font-family:  Garamond2;
+    font-family:Gotham1  uppercase,sans-serif;
     font-weight: normal;
     line-height: 1.5em;
     text-transform: none;
@@ -113,7 +123,6 @@ padding-left: 0.2%;
     text-transform: capitalize;
     margin: 0 0 10px;
     padding: 0 24px;
-
 }
 
 .project-title h3{
@@ -153,6 +162,7 @@ color: #000;
     background-color: rgb(252, 252, 252,0.8);
     opacity: 0.8;
     z-index: 1;
+    cursor:crosshair;
 }
 
 
@@ -1149,7 +1159,7 @@ color: #000;
     background-color: #ddd;
     display: none; /* Ocultar inicialmente la barra de progreso */
     z-index: 1;
-    top: 6%;
+    top: 8%;
 }
 .progress-bar {
     height: 100%;
@@ -1169,42 +1179,127 @@ color: #000;
     height: 100px;
 }
 
-/* Agrega esta regla CSS para las imágenes */
-.imagen_animada {
-  opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
-  transition: opacity 1s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
-}
 
 
-/* Agrega esta regla CSS para las imágenes cuando están en el viewport */
-.imagen_animada.animate {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-
-
-/*
-
-.item__info_1 {
+.cases .list__item:first-child .item__block:first-child .item__info[data-v-a383d858] {
     display: inline-block;
-    vertical-align: text-top;
-    width: 45.9%;
-    text-align: initial;
-    margin-top: 14px;
+    vertical-align: top;
+    padding-left: 29px;
+    padding-top: 25px;
 }
 
-.item__name_1 {
-    font: 700 14px/22px "Fatum", sans-serif;
-    color: #fdfdfd;
+.cases .list__item:first-child .item__block:first-child .item__name[data-v-a383d858] {
+    font-size: 19px;
+}
+.cases .item__block:first-child .item__name[data-v-a383d858] {
+    font-size: 19px;
+}
+.cases .item__name[data-v-a383d858] {
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 19px; 
-    position: absolute;
-    top: 8%; 
-    right: 20%; 
-    margin: 0;
+    font-family: Gotham2;
 }
-*/
+
+
+
+
+/*ANIMACION DEL 3er niv*/
+/* Agrega esta regla CSS para las imágenes */
+#imagen_1 {
+    opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+    transform: translateX(-100%);
+  }
+  
+  
+  /* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+  #imagen_1.animate {
+      transform: translateX(0);
+      opacity: 1;
+      transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+  }
+  
+
+  #imagen_2 {
+    opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+    transform: translateY(-50%);
+  }
+  
+  
+  /* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+  #imagen_2.animate {
+      transform: translateY(0);
+      opacity: 1;
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  #imagen_3 {
+    opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+    transform: translateX(-50%);
+  }
+  
+  
+  /* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+  #imagen_3.animate {
+      transform: translateX(0);
+      opacity: 1;
+      transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+  }
+  
+  #imagen_4 {
+    opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+    transform: translateX(50%);
+  }
+  
+  
+  /* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+  #imagen_4.animate {
+      transform: translateX(0);
+      opacity: 1;
+      transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+  }
+  #imagen_5 {
+    opacity: 0; /* Establece la opacidad en 0 para ocultar la imagen */
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+    transform: translateY(-50%);
+  }
+  
+  
+  /* Agrega esta regla CSS para las imágenes cuando están en el viewport */
+  #imagen_5.animate {
+      transform: translateY(0);
+      opacity: 1;
+      transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+  }
+  #titulo.animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Establece la posición inicial fuera del viewport y con opacidad 0 */
+#titulo {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+#titulo2.animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Establece la posición inicial fuera del viewport y con opacidad 0 */
+#titulo2 {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
 

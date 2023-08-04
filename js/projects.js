@@ -178,3 +178,63 @@ window.addEventListener('load', function () {
 
 
 
+
+
+// Función para verificar si un elemento está en el viewport
+function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+// Función para activar la animación de deslizamiento al aparecer en el viewport
+function activateAnimation(element) {
+    if (isElementInViewport(element)) {
+        element.classList.add('animate');
+    }
+}
+
+// Elemento a animar
+var itemInfo = document.querySelector('.item__info');
+
+// Evento para activar la animación al hacer scroll
+window.addEventListener('scroll', function () {
+    activateAnimation(itemInfo);
+});
+
+// Evento para activar la animación al cargar la página
+window.addEventListener('load', function () {
+    activateAnimation(itemInfo);
+});
+
+
+// Elemento a animar
+var itemBlock = document.querySelector('#titulo2');
+
+// Evento para activar la animación al hacer scroll
+window.addEventListener('scroll', function () {
+    activateAnimation(itemBlock);
+});
+
+// Evento para activar la animación al cargar la página
+window.addEventListener('load', function () {
+    activateAnimation(itemBlock);
+});
+
+
+// Elemento a animar
+var itemImg = document.querySelector('#imagen_1');
+
+// Evento para activar la animación al hacer scroll
+window.addEventListener('scroll', function () {
+    activateAnimation(itemImg);
+});
+
+// Evento para activar la animación al cargar la página
+window.addEventListener('load', function () {
+    activateAnimation(itemImg);
+});
+
+
