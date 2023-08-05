@@ -10,7 +10,7 @@ const projectURLs = {
     "image-box-2": "Projects/Projects_Las_Prunas.html",
     "image-box-6": "Projects/Projects_Romito.html",
     "image-box-4": "Projects/Projects_Mar_Chiquita.html",
-    "image-box-5": "Projects/Projects_3.html"
+    "image-box-5": "Projects/Projects_Mar_Chiquita.html"
 
 };
 
@@ -214,11 +214,13 @@ const options = {
 // Elementos a animar
 var itemInfo = document.querySelector('.item__info');
 var itemBlock = document.querySelector('#titulo2');
+var itemBlock2 = document.querySelector('#titulo');
 var itemImg = document.querySelector('#imagen_1');
 var itemImg2 = document.querySelector('#imagen_2');
 var itemImg3 = document.querySelector('#imagen_3');
 var itemImg4 = document.querySelector('#imagen_4');
 var itemImg5 = document.querySelector('#imagen_5');
+var nombre = document.querySelector('#nombre');
 // Callback del Intersection Observer
 function handleIntersection(entries, observer) {
     entries.forEach(entry => {
@@ -235,12 +237,14 @@ const observer = new IntersectionObserver(handleIntersection, options);
 // Observar los elementos
 observer.observe(itemInfo);
 observer.observe(itemBlock);
+
+observer.observe(nombre);
 observer.observe(itemImg);
 observer.observe(itemImg2);
 observer.observe(itemImg3);
 observer.observe(itemImg4);
 observer.observe(itemImg5);
-
+observer.observe(itemBlock2);
 /*---------*/
 /*---------*/
 

@@ -10,14 +10,46 @@
     <title>Teamwork</title>
 </head>
 <style>
+    @font-face
+{
+        font-family: Gotham;
+    src: url(../font/Gotham-Font/Gotham-Font/Gotham-Light.otf);
+}
+.link2,a{
+    color: #000;
+    margin-top: 0;
+    font-size: 15px;
+    font-family:  Garamond2;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    padding: 0 24px;
+    text-decoration: none;
+    color:#151515;
+    transition:.5s ease;
+    transition-duration:1s;
+    transition-timing-function: ease;
+}
 
+.link2,a:hover{
+    color: #C4AD78;
+}
 
-.team,h1 {
+.team {
     text-align: center; /* Centra los elementos horizontalmente */
 }
 
 .titulo {
     margin-top: 30px; /* Espacio superior */
+    text-align: center;
 }
 
 .contenedor_img {
@@ -34,6 +66,10 @@
 .contenido {
     text-align: center; /* Centra el contenido horizontalmente */
     margin-top: 20px;
+    padding-top: 0;
+}
+.contenido p {
+    margin-bottom: 10px; /* Ajusta el margen inferior de los párrafos */
 }
 
  /* .contenedor_img_2 {
@@ -75,49 +111,102 @@
 .contenedor_img_3 {
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 3%;
+    gap: 1%;
     flex-wrap: wrap; /* Ajusta a una nueva fila cuando el ancho es menor */
+    width: 100%;
 }
 
 .img_p_3 {
     text-align: center; /* Centra los elementos horizontalmente */
     flex: 1;
-    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 250px; /* Ajusta el ancho máximo según tus necesidades */
 }
 
 .img_3 {
     width: 100%;
     max-width: 100%;
     filter: grayscale(1);
+    transition: filter .5s ease;
+    transition-duration:1s;
+    transition-timing-function: ease;
 }
 
-.textos2 {
+.nombres {
     background-color: #f4f4f4;
-    padding: 10px;
+  
     margin-top: 10px;
+    color: #000;
+    font-family: Gotham2;
+}
+.textos2 {
+    margin-top: 10px; /* Ajusta el margen superior del contenedor */
 }
 
+.textos2 .nombre {
+    margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
+}
+
+.textos2 .links {
+    display: flex;
+    gap: 10px; /* Ajusta el espacio entre los enlaces */
+}
 
 .img_3:hover
 {
     filter: grayscale(0);
+}
+.pagos {
+    text-align: center;
+}
+
+.titulo_pagos {
+    margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+.medios_pagos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.medios_pagos img {
+    max-width: 100%;
+    height: auto;
+}
+.boton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.3); /* Color con poca opacidad */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Transición para el efecto hover */
+}
+
+.boton:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Color original al hacer hover */
 }
 
 </style>
 
 <body>
 
-    <h1>NUESTO EQUIPO</h1>
-
+    <h1 class="titulo">NUESTRO EQUIPO</h1>
+    <a href="../Chauvin/index.html" class="boton">Volver</a>
+<!--
     <div class="contenedor_img">
         <img src="img/grupal.png" alt="Imagen grupal" class="img-fluid">
     </div>
+    -->
     <div class="contenido">
         <p>
-            Somos un grupo de estudiantes de Ingenieria de UTN-FRA. 
-        </p>
-        <p>Nos especializamos en programacion independiente.</p>
+            Somos un grupo de estudiantes de Ingenieria de UTN-FRA. <br>
+        Nos especializamos en programacion independiente.</p>
     </div>
+    <br>
 <!--
     <section id="team" class="team section-padding">
         <div class="contenedor_img_3">
@@ -137,54 +226,61 @@
     </section>
 
     -->
-
+    
     <section id="team" class="team section-padding">
         <div class="contenedor_img_3">
             <div class="img_p_3" >
                 <img src="img/FOTOS TEAMWORK/Untitled design/1.jpg" alt="Imagen grupal" class="img_3">
                 <div class="textos2">
+                    <br>
                     <div class="nombre">
-                        <p>David</p>
+                        <p>David Molina</p>
                     </div>
+                    
                     <div class="link2">
-                        <p>Linkedin: asdasd</p>
-                    </div>
-                    <div class="git2">
-                        <p>Github: asdasd</p>
+                        <a href="https://www.linkedin.com/in/david-molina-475304190/"> <p>LINKEDIN</p></a>
+                        <a href="https://github.com/davidmolecula"><p>GITHUB</p></a>
                     </div>
                 </div>
             </div>
             <div class="img_p_3" id="Ingdrid">
                 <img src="img/FOTOS TEAMWORK/Untitled design/2.jpg" alt="Imagen grupal" class="img_3" >
                 <div class="textos2">
+                    <br>
                     <div class="nombre">
-                        <p>Ingdrid</p>
+                        <p>Ingrid Elizabeth Vasquez Saa</p>
                     </div>
+                   
                     <div class="link2">
-                        <p>Linkedin: asdasd</p>
-                    </div>
-                    <div class="git2">
-                        <p>Github: asdasd</p>
+                        <a href="https://www.linkedin.com/in/ingridelizabeth/"> <p>LINKEDIN</p></a>
+                        <a href="https://github.com/ingridelizabethvs"><p>GITHUB</p></a>
                     </div>
                 </div>
             </div>
             <div class="img_p_3" >
                 <img src="img/FOTOS TEAMWORK/Untitled design/3.jpg" alt="Imagen grupal" class="img_3">
                 <div class="textos2">
+                    <br>
                     <div class="nombre">
                         <p>Javier Nicolas Ferraro</p>
                     </div>
                     <div class="link2">
-                        <p>Linkedin: asdasd</p>
+                        <a href="https://www.linkedin.com/in/javier-nicol%C3%A1s-ferraro-4aa3a3207/"> <p>LINKEDIN</p></a>
+                        <a href="https://github.com/JavierFerraro010101"><p>GITHUB</p></a>
                     </div>
-                    <div class="git2">
-                        <p>Github: asdasd</p>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
-    
+    <br>
+    <br>
+    <br>
+    <section  id="pagos" class="pagos section-padding">
+        <div class="titulo_pagos"><h2>MEDIOS DE PAGO</h2></div>
+        <br>
+        <div class="medios_pagos">
+            <img src="img/FOTOS TEAMWORK/Medios de pagos/Untitled design.png" alt="">
+        </div>
+    </section>
 </body>
 </html>
