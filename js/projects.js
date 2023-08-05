@@ -3,7 +3,7 @@
 
 // Definimos un objeto que mapea los ID de las imágenes con sus URLs correspondientes
 
-
+/*---------*/
 const projectURLs = {
     "image-box-1": "Projects/Projects_Azul.html",
     "image-box-3": "Projects/Projects_Las_Margaritas.html",
@@ -34,10 +34,10 @@ imageBoxes.forEach(imageBox => {
     imageBox.addEventListener('click', redirectToProjectPage);
 });
 
+/*---------*/
 
 
-
-
+/*---------*/
 
 const grayscaleImages = document.querySelectorAll('.grayscale');
 
@@ -59,12 +59,11 @@ grayscaleImages.forEach(image => {
   image.addEventListener('mouseleave',applyGrayscale);
 });
 
+/*---------*/
 
 
 
-
-
-
+/*---------*/
 
 const elementsToAnimate = document.querySelectorAll('.project-image, .project-description');
 
@@ -93,14 +92,22 @@ animateElementsOnScroll();
 window.addEventListener('scroll', animateElementsOnScroll);
 
 
+/*---------*/
+
+
+//<![CDATA[ esto es de la barra de carga 
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        console.log(document.readyState);
+        document.getElementById("PreLoaderBar").style.display = "none";
+    }
+}
+//]]>
 
 
 
 
-
-
-
-
+/*---------*/
 
 let reachedEndOfPage = false;
         let redirectTimeout;
@@ -139,7 +146,7 @@ let reachedEndOfPage = false;
                 if (!reachedEndOfPage) {
                     reachedEndOfPage = true;
                     showProgressBar();
-                    redirectToAnotherPageWithDelay(4000);
+                    redirectToAnotherPageWithDelay(1000);
                 }
             } else {
                 reachedEndOfPage = false;
@@ -147,9 +154,9 @@ let reachedEndOfPage = false;
             }
         });
 
+/*---------*/
 
-
-
+/*---------*/
 // Función para verificar si un elemento está en el viewport
 function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
@@ -180,8 +187,8 @@ window.addEventListener('load', function () {
 });
 
 
-
-
+/*---------*/
+/*---------*/
 
 // Función para verificar si un elemento está en el viewport
 function isElementInViewport(element) {
@@ -194,60 +201,52 @@ function isElementInViewport(element) {
 
 // Función para activar la animación de deslizamiento al aparecer en el viewport
 function activateAnimation(element) {
-    if (isElementInViewport(element)) {
-        element.classList.add('animate');
-    }
+    element.classList.add('animate');
 }
 
-// Elemento a animar
+// Opciones para el Intersection Observer
+const options = {
+    root: null, // El root es el viewport
+    rootMargin: '0px',
+    threshold: 0.1 // El umbral de intersección
+};
+
+// Elementos a animar
 var itemInfo = document.querySelector('.item__info');
-
-// Evento para activar la animación al hacer scroll
-window.addEventListener('scroll', function () {
-    activateAnimation(itemInfo);
-});
-
-// Evento para activar la animación al cargar la página
-window.addEventListener('load', function () {
-    activateAnimation(itemInfo);
-});
-
-
-// Elemento a animar
 var itemBlock = document.querySelector('#titulo2');
-
-// Evento para activar la animación al hacer scroll
-window.addEventListener('scroll', function () {
-    activateAnimation(itemBlock);
-});
-
-// Evento para activar la animación al cargar la página
-window.addEventListener('load', function () {
-    activateAnimation(itemBlock);
-});
-
-
-// Elemento a animar
 var itemImg = document.querySelector('#imagen_1');
-
-// Evento para activar la animación al hacer scroll
-window.addEventListener('scroll', function () {
-    activateAnimation(itemImg);
-});
-
-// Evento para activar la animación al cargar la página
-window.addEventListener('load', function () {
-    activateAnimation(itemImg);
-});
-
-
-
-
-//<![CDATA[ esto es de la barra de carga 
-    document.onreadystatechange = function () {
-        if (document.readyState === "complete") {
-            console.log(document.readyState);
-            document.getElementById("PreLoaderBar").style.display = "none";
+var itemImg2 = document.querySelector('#imagen_2');
+var itemImg3 = document.querySelector('#imagen_3');
+var itemImg4 = document.querySelector('#imagen_4');
+var itemImg5 = document.querySelector('#imagen_5');
+// Callback del Intersection Observer
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            activateAnimation(entry.target);
+            observer.unobserve(entry.target); // Dejar de observar una vez que se ha animado
         }
-    }
-//]]>
+    });
+}
+
+// Crear el Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Observar los elementos
+observer.observe(itemInfo);
+observer.observe(itemBlock);
+observer.observe(itemImg);
+observer.observe(itemImg2);
+observer.observe(itemImg3);
+observer.observe(itemImg4);
+observer.observe(itemImg5);
+
+/*---------*/
+/*---------*/
+
+
+
+
+/*---------*/
+
+
