@@ -136,4 +136,7 @@
     .servicios-content-faq{
         flex-wrap: wrap;
     }
+    .servicios-content-sellos{
+        flex-wrap: wrap;
+    }
 }
