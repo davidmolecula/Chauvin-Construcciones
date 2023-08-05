@@ -19,7 +19,12 @@ a{
 {
     font-family: Gotham;
     src: url(../font/Gotham-Font/Gotham-Font/Gotham-Light.otf);
-}
+    }
+
+    @font-face {
+        font-family: GothamBold;
+        src: url(../font/Gotham-Font/Gotham-Font/Gotham-Bold.otf);
+    }
 
 ::-webkit-scrollbar {
 	background: #151515;
@@ -64,10 +69,9 @@ a{
     text-transform: uppercase;
     font-family: Gotham;
     letter-spacing: 0.5px;
-    
+    font-weight: 900;
     opacity: 0;
     transition: all .5s ease;
-    
 }
 
 
@@ -97,16 +101,23 @@ a{
 
 .carousel-caption{
     left:5%;
-    top: 20%;
+    top: 40%;
     width: 85vw;
     height: 60vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     text-align: start;
     font-weight: bolder;
+    z-index: 2000;
+
+    
+}
+#caption1{
+    display: flex;
 }
 .carousel-caption img {
-    width: 200px;
+    width: 100px;
+   
 }
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
@@ -117,8 +128,11 @@ a{
     font-family: Gotham;
     letter-spacing: 0.5px;
     transition: all .5s ease;
-    width: 90%;
+    width: 80%;
     font-weight: bold;
+    z-index: 2050;
+    position: relative;
+
 }
 .carousel-caption:hover .landing-hover{
     opacity: 1;
@@ -242,7 +256,7 @@ body{
         text-align: center;
     }
     .carousel-caption{
-        bottom: 200px;
+        bottom: 100px;
     }
 
     .carousel-caption p{
@@ -296,13 +310,15 @@ body{
         text-align: center;
     }
     .carousel-caption{
-        bottom: 15%!important;
+        bottom: 5%!important;
         left: 10%;
+        top: 0;
         word-break: keep-all;
     }
     .carousel-caption-hover{
         font-size: 1.1em;
         word-break: keep-all;
+        bottom: -40%;
     }
     
     .card{
@@ -359,5 +375,8 @@ body{
 
 .footer-link:hover{
     color: #C4AD78;
+}
+.text-light:hover{
+    color: #C4AD78!important;
 }
 
