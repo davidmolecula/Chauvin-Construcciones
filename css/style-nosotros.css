@@ -311,7 +311,7 @@ h4{
         color: white;
     }
     .nosotros-section{
-        padding: 0;
+        padding: 0 15px 0 15px;
     }
     .titulo-nosotros-span-rotate{
         font-size: 55px;
@@ -331,6 +331,9 @@ h4{
     }
     .nosotros-content-valores{
         height: fit-content;
+    }
+    .nosotros-daniel-translate div{
+        padding-left: 0;
     }
     }
 

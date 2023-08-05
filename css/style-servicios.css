@@ -29,11 +29,9 @@
 .servicios-content{
     display: flex; 
     font-size: 20px;
-    border: 1px solid black;
     padding-top: 100px;
 }
 .servicios-content-contactanos{
-    border: 1px solid black;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -48,13 +46,13 @@
 }
 .servicios-content-faq{
     display: flex;
-    border: 1px solid black;
     padding-top: 100px;
     
 }
 .servicios-content-faq-content{
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 20px;
 }
 
 .bold {
