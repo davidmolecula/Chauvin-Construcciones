@@ -1,13 +1,6 @@
 
 const serviciosContentPrimero=document.getElementById('servicios-content-primero');
-
-
-
-
-window.addEventListener('load',()=>{
-    divRotate.classList.add('titulo-nosotros-span-rotate-back');
-    divTranslate.classList.add('titulo-nosotros-span-translate-back');
-})
+const serviciosContentFaq=document.getElementById('servicios-content-faq');
 
 
 const loadService=(entradas,observador)=>{
@@ -25,6 +18,20 @@ const loadService=(entradas,observador)=>{
     });
 }
 
+const loadFaq=(entradas,observadorFaq)=>{
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('servicios-faq-back');
+
+            
+        }
+        else{
+            entrada.target.classList.remove('servicios-faq-back');
+            
+        }
+        
+    });
+}
 
 
 
@@ -35,10 +42,18 @@ const observador=new IntersectionObserver(loadService,{
 });
 
 
+const observadorFaq=new IntersectionObserver(loadFaq,{
+    root:null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold:.4
+});
+
+
 /*
 observador.observe(servicio1);
 */
 observador.observe(serviciosContentPrimero);
+observadorFaq.observe(serviciosContentFaq);
 
 
 if(window.innerWidth<991){
