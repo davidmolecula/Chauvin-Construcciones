@@ -55,9 +55,55 @@ body{
     padding-top: 10px;
 }
 
+
+.titulo-nosotros-contenedora{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.titulo-nosotros{
+    position: relative;
+    font-family: Gotham;
+    height: 100px;
+    text-transform: uppercase;
+}
+.titulo-nosotros-span-hidden{
+    overflow: hidden;
+}
+.titulo-nosotros-span-translate
+{
+    transform: translateY(-120px);
+    transition: all 1s;
+}
 .titulo-nosotros-span-rotate{
-    font-size: 60px;
+    transform: rotateZ(-25deg);
+    transition: all 1s;
+    opacity: 0;
     color: white;
+    font-size: 60px;
+    font-weight: 800;
+    width: fit-content;
+    position: relative;
+}
+.titulo-nosotros-span-rotate::before{
+content: '';
+position: absolute;
+bottom: 0;
+height: 6%;
+width: 0%;
+border-radius: 5px;
+background-color: #C4AD78;
+transition: all 1s ease-in-out;
+}
+.titulo-nosotros-span-rotate:hover::before{
+    width: 100%;
+}
+.titulo-nosotros-span-translate-back{
+    transform: translate(0);
+}
+.titulo-nosotros-span-rotate-back{
+    transform: rotateZ(0);
+    opacity: 1;
 }
 
 .footer-link{

@@ -1,13 +1,4 @@
 
-
-:root{
-    --color1:rgb(103,151,151);
-    --color2:rgb(176,201,201);
-    --color3:rgb(53,78,78);
-    --color4:rgb(132,156,148);
-    --color5:rgb(180,204,204);
-    --black:rgb(33, 37, 41);
-}
 *{
     color: black;
 }
@@ -21,6 +12,7 @@
     background-size: cover;
     height: fit-content;
     overflow: hidden;
+    padding:0 80px 0 80px;
 }
 
 /* ESTILO Y ANIMACIONES DE "NOSOTROS" */
@@ -60,9 +52,7 @@
 }
 
 /* CONTENIDO DE LA SECCION: FILOSOFIA*/
-.nosotros-section{
-    padding:0 80px 0 80px;
-}
+
 .nosotros-content {
     height: 70vh;
     
@@ -142,12 +132,11 @@ h4{
     line-height: 1.2em;
     font-family: Garamond2;
 }
-.nosotros-content-valores>div{
+.nosotros-content-valores div{
     margin-top: 100px;
     transform: translateX(-80px);
     opacity: 0;
     transition: all 1s;
-    
     border-radius: 5px;
 }
 
@@ -173,6 +162,10 @@ h4{
 
 
 @media only screen and (min-width:500px) and (max-width:768px){
+    .nav-link, .landing-hover{
+        color: white;
+    }
+   
     .daniel-content{
         flex-wrap: wrap;
         height: fit-content;
@@ -182,16 +175,26 @@ h4{
 }
 .nosotros-daniel-translate{
     width: 330px;
+    
+}
+.nosotros-daniel-translate>div{
+    padding: 0;
 }
 }
 
 @media (max-width: 1000px){
 
+    .nav-link, .landing-hover{
+        color: white;
+    }
     .daniel-content{
         height: fit-content;
     }
     .nosotros-daniel-translate{
         transform: translateX(-200px);
+    }
+    .miembros{
+        padding: 0;
     }
 .servicios {
     display: flex;
@@ -213,6 +216,14 @@ h4{
     grid-row: 3 / -1;
 }}
 
+@media only screen and (min-width:991px) and (max-width:1220px){
+    .daniel-content{
+        height: fit-content;
+    }
+    .miembros{
+        padding: 0;
+    }
+}
 
 
 
@@ -291,6 +302,7 @@ h4{
     transform: translateX(0px);
     opacity: 1;
 }
+
 @media (max-width: 500px){
     .nav-link{
         color: white;

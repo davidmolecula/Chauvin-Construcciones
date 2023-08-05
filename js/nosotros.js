@@ -12,6 +12,8 @@ const nosotrosTexto1=document.getElementById('nosotros-texto1');
 const nosotrosDaniel=document.getElementById('nosotros-daniel');
 const nosotrosDanielFoto=document.getElementById('nosotros-daniel-foto');
 const nosotrosContentValores=document.getElementById('nosotros-content-valores');
+const navBarLogo=document.getElementById('navbar-logo');
+const navBar=document.getElementById('navbar');
 
 
 window.addEventListener('load',()=>{
@@ -91,7 +93,7 @@ const observador2=new IntersectionObserver(loadText,{
 const observador3=new IntersectionObserver(loadDaniel,{
     root:null,
     rootMargin: '0px 0px 0px 0px',
-    threshold:.6
+    threshold:.3
 })
 
 const observador4=new IntersectionObserver(loadValores,{
@@ -106,3 +108,8 @@ observador2.observe(nosotrosTexto1);
 observador3.observe(imagen2)
 observador4.observe(nosotrosContentValores);
 
+if(window.innerWidth<991){
+    navBar.classList.add('navbar-black');
+
+navBarLogo.innerHTML='<img src="icons/footer.jpeg" width="100px" alt="">';
+}
