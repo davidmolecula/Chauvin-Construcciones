@@ -1,12 +1,6 @@
 
 const divTranslate=document.getElementById('div-translate');
 const divRotate=document.getElementById('div-rotate');
-const servicio1=document.getElementById('servicio1');
-const servicio2=document.getElementById('servicio2');
-const servicio3=document.getElementById('servicio3');
-const servicio4=document.getElementById('servicio4');
-const servicio5=document.getElementById('servicio5');
-const servicio6=document.getElementById('servicio6');
 const imagen2=document.getElementById('imagen2');
 const nosotrosTexto1=document.getElementById('nosotros-texto1');
 const nosotrosDaniel=document.getElementById('nosotros-daniel');
