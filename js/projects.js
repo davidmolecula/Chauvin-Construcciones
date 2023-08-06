@@ -1,5 +1,12 @@
 
-
+//<![CDATA[ esto es de la barra de carga 
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        console.log(document.readyState);
+        document.getElementById("PreLoaderBar").style.display = "none";
+    }
+}
+//]]>
 
 // Definimos un objeto que mapea los ID de las imágenes con sus URLs correspondientes
 
@@ -9,7 +16,7 @@ const projectURLs = {
     "image-box-3": "Projects/Projects_Las_Margaritas.html",
     "image-box-2": "Projects/Projects_Las_Prunas.html",
     "image-box-6": "Projects/Projects_Romito.html",
-    "image-box-4": "Projects/Projects_Mar_Chiquita.html",
+    "image-box-4": "Projects/Proximamente.html",
     "image-box-5": "Projects/Projects_Mar_Chiquita.html"
 
 };

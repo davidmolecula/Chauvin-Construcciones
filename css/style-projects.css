@@ -723,7 +723,7 @@ padding-left: 0.2%;
 .cases .item__name {
     font: 700 14px/22px "Fatum",sans-serif;
     color: #fdfdfd;
-    text-transform: uppercase;
+
     letter-spacing: 1px;
 }
 .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info {
@@ -772,6 +772,7 @@ padding-left: 0.2%;
 
 #text{
     font-family: Garamond2 !important;
+    text-transform: none !important;
 }
 
 #nombre
@@ -1378,8 +1379,8 @@ padding-left: 0.2%;
     .cases .list__item:first-child .item__block:first-child .item__info {
         padding-left: 0;
         padding-top: 12px;
-        margin-top: -75%;
-        margin-left: 35%;
+           margin-top: -75%;
+    margin-left: 35%;
         /* margin-right: 2%; */
     }
 
