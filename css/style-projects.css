@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: Garamond2;
-    src: url(../font/garamond-premier-pro-display_PsgQt/Garamond\ Premier\ Pro\ Display/);
+    src: url(../font/garamond-premier-pro-display_PsgQt/Garamond-Premier-Pro-Display/);
 
     font-family: Gotham1;
     src: url(../font/Gotham-Font/Gotham-Font/Gotham-Light.otf);
@@ -147,7 +147,6 @@ padding-left: 0.2%;
 
 .image-box:hover {
     background-color: rgba(0, 0, 0, 0.7);
-    transition-duration: .2s ease-in-out;
 }
 
 .image-box:hover .project-title {

@@ -5,750 +5,827 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../font/garamond-premier-pro-display_PsgQt/Garamond Premier Pro Display/Garamond Premier Pro Display.otf">
+    <link rel="stylesheet"
+        href="../font/garamond-premier-pro-display_PsgQt/Garamond-Premier-Pro-Display/Garamond-Premier-Pro-Display.otf">
     <title>Chauvin Arquitectura</title>
+    <style>
+        body {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            box-sizing: border-box;
+            margin: 0;
+            max-width: 100%;
+            -webkit-font-smoothing: antialiased;
+
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            background-color: #f5f5f3;
+        }
+
+        .cases {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            -webkit-font-smoothing: antialiased;
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            box-sizing: border-box;
+            padding-top: 145px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .cases[data-v-a383d858] {
+            padding-top: 145px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .cases .cases__list {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            -webkit-font-smoothing: antialiased;
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            box-sizing: border-box;
+            animation: fade-in-data-v-a383d858 1s ease forwards;
+            margin-top: -1px;
+            width: 100%;
+        }
+
+        .cases__list[data-v-a383d858] {
+            margin-top: -1px;
+            width: 100%;
+        }
+
+        .cases .cases__list .list__item {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            -webkit-font-smoothing: antialiased;
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            box-sizing: border-box;
+            width: 100%;
+            padding-bottom: 2px;
+        }
+
+        .cases .list__item[data-v-a383d858] {
+            width: 100%;
+            padding-bottom: 2px;
+        }
+
+        .cases .list__item[data-v-a383d858]:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .cases .cases__list .list__item .item__block {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            -webkit-font-smoothing: antialiased;
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+        }
+
+        .cases .list__item:first-child .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .item__block[data-v-a383d858]:first-child {
+            width: 100%;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+
+        .cases .cases__list .list__item .item__block .item__img {
+            -webkit-text-size-adjust: 100%;
+            --vh: 6.29px;
+            -webkit-font-smoothing: antialiased;
+            font: 16px/16px "Fatum", Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            background-color: transparent;
+            color: inherit;
+            text-decoration: none;
+            outline: none;
+            filter: grayscale(1);
+            transition: filter .5s ease;
+            overflow: hidden;
+            width: 61.25%;
+            position: relative;
+            background-size: cover;
+            background-position: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .cases .list__item:first-child .item__block:first-child .item__img[data-v-a383d858] {
+            width: 61.25%;
+            position: relative;
+            background-size: cover;
+            background-position: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .cases .item__block:first-child .item__img[data-v-a383d858] {
+            width: 61.25%;
+            background-size: cover;
+            background-position: 50%;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .list__item:first-child .item__block:first-child .item__img[data-v-a383d858]:after {
+            padding-top: 57.55%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+        }
+
+        .cases .item__img[data-v-a383d858]:after {
+            content: "";
+            display: block;
+            background-color: rgba(0, 0, 0, .25);
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+
+        .cases .list__item:first-child .item__block:first-child .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__block:first-child .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .list__item:first-child .item__block[data-v-a383d858]:nth-child(2) {
+            float: right;
+            margin-right: 4.6vw;
+            width: 29.6%;
+            margin-top: -200px;
+        }
+
+        .cases .list__item:first-child .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .item__block[data-v-a383d858]:nth-child(2) {
+            float: right;
+            margin-right: 4.6vw;
+            width: 29.6%;
+            margin-top: -280px;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .list__item:first-child .item__block:nth-child(2) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__block:nth-child(2) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .list__item:first-child .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
+            padding-top: 130.9%;
+        }
+
+        .cases .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
+            padding-top: 130.9%;
+        }
+
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+
+            .cases .item__img[data-v-a383d858]:after {
+                content: "";
+                display: block;
+                background-color: rgba(0, 0, 0, .25);
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+
+
+        .cases .list__item:first-child .item__block[data-v-a383d858]:nth-child(3) {
+            margin-left: 6.25%;
+            width: 43%;
+            margin-top: 66px;
+        }
+
+        .cases .list__item:first-child .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .item__block[data-v-a383d858]:nth-child(3) {
+            margin-left: 6.25%;
+            width: 43%;
+            margin-top: 66px;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .list__item:first-child .item__block:nth-child(3) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__block:nth-child(3) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .list__item:first-child .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
+            padding-top: 57.3%;
+        }
+
+        .cases .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
+            padding-top: 57.25%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+
+            .cases .item__img[data-v-a383d858]:after {
+                content: "";
+                display: block;
+                background-color: rgba(0, 0, 0, .25);
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+
+        .cases .list__item:first-child .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+
+
+
+        .cases .list__item[data-v-a383d858]:nth-child(2n) {
+            padding-bottom: 55px;
+        }
+
+        .cases .list__item[data-v-a383d858] {
+            width: 100%;
+            padding-bottom: 2px;
+        }
+
+        .cases .list__item[data-v-a383d858]:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
+            text-align: right;
+        }
+
+        .cases .item__block[data-v-a383d858]:first-child {
+            width: 100%;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:first-child .item__img[data-v-a383d858] {
+            position: relative;
+        }
+
+        .cases .item__block:first-child .item__img[data-v-a383d858] {
+            width: 61.25%;
+            background-size: cover;
+            background-position: 50%;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
+            text-align: right;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:first-child .item__img[data-v-a383d858]:after {
+            padding-top: 57.6%;
+        }
+
+        .cases .item__block:first-child .item__img[data-v-a383d858]:after {
+            padding-top: 57.55%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+
+            .cases .item__img[data-v-a383d858]:after {
+                content: "";
+                display: block;
+                background-color: rgba(0, 0, 0, .25);
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:first-child .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__block:first-child .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
+            text-align: right;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(2) {
+            float: left;
+            margin-right: 0;
+            margin-left: 4.6%;
+            margin-top: -345px;
+        }
+
+        .cases .item__block[data-v-a383d858]:nth-child(2) {
+            float: right;
+            margin-right: 4.6vw;
+            width: 29.6%;
+            margin-top: -280px;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(2) .item__img[data-v-a383d858] {
+            position: relative;
+        }
+
+        .cases .item__block:nth-child(2) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
+            padding-top: 130.9%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+
+            .cases .item__img[data-v-a383d858]:after {
+                content: "";
+                display: block;
+                background-color: rgba(0, 0, 0, .25);
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(2) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__block:nth-child(2) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .item__block[data-v-a383d858]:nth-child(3) {
+            margin-left: 6.25%;
+            width: 43%;
+            margin-top: 66px;
+        }
+
+        .cases .item__block[data-v-a383d858] {
+            display: block;
+        }
+
+
+
+        /* VER COMO BORRAR LO QUE NO ME SIRVE*/
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__img[data-v-a383d858] {
+            display: inline-block;
+            width: 45.9%;
+            position: relative;
+        }
+
+        .cases .item__block:nth-child(3) .item__img[data-v-a383d858] {
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            position: relative;
+        }
+
+        .cases .item__img[data-v-a383d858] {
+            filter: grayscale(1);
+            display: block;
+            transition: filter .5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
+            padding-top: 57.25%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .cases .item__img[data-v-a383d858]:after {
+                background: none;
+            }
+
+            .cases .item__img[data-v-a383d858]:after {
+                content: "";
+                display: block;
+                background-color: rgba(0, 0, 0, .25);
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .item__img>img[data-v-a383d858] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        /*TEXTO*/
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
+            display: inline-block;
+            width: 45.9%;
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        .cases .item__block:nth-child(3) .item__info[data-v-a383d858] {
+            margin-top: 16px;
+            margin-left: 0;
+        }
+
+        .cases .item__info[data-v-a383d858] {
+            display: block;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .item__name[data-v-a383d858] {
+            font: 700 14px/22px "Fatum", sans-serif;
+            color: #363636;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
+            display: inline-block;
+            width: 45.9%;
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .item__square[data-v-a383d858] {
+            padding-top: 1px;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
+            display: inline-block;
+            width: 45.9%;
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .item__square span[data-v-a383d858] {
+            font: 400 11px/25px "Fatum", sans-serif;
+            color: #1c1c1c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: .7;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
+            display: inline-block;
+            width: 45.9%;
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        .cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
+            text-align: right;
+            margin-left: 0;
+            margin-top: 57px;
+            width: 100%;
+            padding-right: 6.3%;
+        }
+
+        .cases .list__item:first-child .item__block:first-child .item__name[data-v-a383d858] {
+            font-size: 19px;
+        }
+
+        .cases .item__block:first-child .item__name[data-v-a383d858] {
+            font-size: 19px;
+        }
+
+        .cases .item__name[data-v-a383d858] {
+            font: 700 14px/22px "Fatum", sans-serif;
+            color: #363636;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cases .list__item:first-child .item__block:first-child .item__info[data-v-a383d858] {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 29px;
+            padding-top: 25px;
+        }
+    </style>
 </head>
 
-<style>
-body{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    box-sizing: border-box;
-    margin: 0;
-    max-width: 100%;
-    -webkit-font-smoothing: antialiased;
 
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    color: #1c1c1c;
-    background-color: #f5f5f3;
-}
-.cases
-{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    -webkit-font-smoothing: antialiased;
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    color: #1c1c1c;
-    box-sizing: border-box;
-    padding-top: 145px;
-    min-height: 100vh;
-    position: relative;
-}
-.cases[data-v-a383d858] {
-    padding-top: 145px;
-    min-height: 100vh;
-    position: relative;
-}
-.cases .cases__list
-{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    -webkit-font-smoothing: antialiased;
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    color: #1c1c1c;
-    box-sizing: border-box;
-    animation: fade-in-data-v-a383d858 1s ease forwards;
-    margin-top: -1px;
-    width: 100%;
-}
-.cases__list[data-v-a383d858] {
-    margin-top: -1px;
-    width: 100%;
-}
-
-.cases .cases__list .list__item
-{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    -webkit-font-smoothing: antialiased;
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    color: #1c1c1c;
-    box-sizing: border-box;
-    width: 100%;
-    padding-bottom: 2px;
-}
-.cases .list__item[data-v-a383d858] {
-    width: 100%;
-    padding-bottom: 2px;
-}
-
-.cases .list__item[data-v-a383d858]:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.cases .cases__list .list__item .item__block
-{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    -webkit-font-smoothing: antialiased;
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    color: #1c1c1c;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-}
-
-.cases .list__item:first-child .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .item__block[data-v-a383d858]:first-child {
-    width: 100%;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-
-
-.cases .cases__list .list__item .item__block .item__img
-{
-    -webkit-text-size-adjust: 100%;
-    --vh: 6.29px;
-    -webkit-font-smoothing: antialiased;
-    font: 16px/16px "Fatum",Arial,Helvetica,sans-serif;
-    box-sizing: border-box;
-    background-color: transparent;
-    color: inherit;
-    text-decoration: none;
-    outline: none;
-    filter: grayscale(1);
-    transition: filter .5s ease;
-    overflow: hidden;
-    width: 61.25%;
-    position: relative;
-    background-size: cover;
-    background-position: 50%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.cases .list__item:first-child .item__block:first-child .item__img[data-v-a383d858] {
-    width: 61.25%;
-    position: relative;
-    background-size: cover;
-    background-position: 50%;
-    display: inline-block;
-    vertical-align: top;
-}
-.cases .item__block:first-child .item__img[data-v-a383d858] {
-    width: 61.25%;
-    background-size: cover;
-    background-position: 50%;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-}
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.cases .list__item:first-child .item__block:first-child .item__img[data-v-a383d858]:after {
-    padding-top: 57.55%;
-}
-@media screen and (max-width: 1200px){
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-
-.cases .list__item:first-child .item__block:first-child .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-
-.cases .item__block:first-child .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-
-.cases .list__item:first-child .item__block[data-v-a383d858]:nth-child(2) {
-    float: right;
-    margin-right: 4.6vw;
-    width: 29.6%;
-    margin-top: -200px;
-}
-
-.cases .list__item:first-child .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .item__block[data-v-a383d858]:nth-child(2) {
-    float: right;
-    margin-right: 4.6vw;
-    width: 29.6%;
-    margin-top: -280px;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .list__item:first-child .item__block:nth-child(2) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__block:nth-child(2) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-.cases .list__item:first-child .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
-    padding-top: 130.9%;
-}
-.cases .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
-    padding-top: 130.9%;
-}
-
-
-@media screen and (max-width: 1200px)
-{
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-}
-
-
-.cases .list__item:first-child .item__block[data-v-a383d858]:nth-child(3) {
-    margin-left: 6.25%;
-    width: 43%;
-    margin-top: 66px;
-}
-.cases .list__item:first-child .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .item__block[data-v-a383d858]:nth-child(3) {
-    margin-left: 6.25%;
-    width: 43%;
-    margin-top: 66px;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .list__item:first-child .item__block:nth-child(3) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__block:nth-child(3) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-.cases .list__item:first-child .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
-    padding-top: 57.3%;
-}
-.cases .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
-    padding-top: 57.25%;
-}
-@media screen and (max-width: 1200px)
-{
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-}
-.cases .list__item:first-child .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-
-
-
-
-.cases .list__item[data-v-a383d858]:nth-child(2n) {
-    padding-bottom: 55px;
-}
-.cases .list__item[data-v-a383d858] {
-    width: 100%;
-    padding-bottom: 2px;
-}
-.cases .list__item[data-v-a383d858]:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
-    text-align: right;
-}
-.cases .item__block[data-v-a383d858]:first-child {
-    width: 100%;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-.cases .list__item:nth-child(2n) .item__block:first-child .item__img[data-v-a383d858] {
-    position: relative;
-}
-.cases .item__block:first-child .item__img[data-v-a383d858] {
-    width: 61.25%;
-    background-size: cover;
-    background-position: 50%;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-}
-
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
-    text-align: right;
-}
-.cases .list__item:nth-child(2n) .item__block:first-child .item__img[data-v-a383d858]:after {
-    padding-top: 57.6%;
-}
-.cases .item__block:first-child .item__img[data-v-a383d858]:after {
-    padding-top: 57.55%;
-}
-@media screen and (max-width: 1200px){
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-}
-
-.cases .list__item:nth-child(2n) .item__block:first-child .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__block:first-child .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:first-child {
-    text-align: right;
-}
-
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(2) {
-    float: left;
-    margin-right: 0;
-    margin-left: 4.6%;
-    margin-top: -345px;
-}
-.cases .item__block[data-v-a383d858]:nth-child(2) {
-    float: right;
-    margin-right: 4.6vw;
-    width: 29.6%;
-    margin-top: -280px;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-
-.cases .list__item:nth-child(2n) .item__block:nth-child(2) .item__img[data-v-a383d858] {
-    position: relative;
-}
-.cases .item__block:nth-child(2) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-.cases .item__block:nth-child(2) .item__img[data-v-a383d858]:after {
-    padding-top: 130.9%;
-}
-@media screen and (max-width: 1200px){
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-}
-
-.cases .list__item:nth-child(2n) .item__block:nth-child(2) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__block:nth-child(2) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-.cases .item__block[data-v-a383d858]:nth-child(3) {
-    margin-left: 6.25%;
-    width: 43%;
-    margin-top: 66px;
-}
-.cases .item__block[data-v-a383d858] {
-    display: block;
-}
-
-
-
-/* VER COMO BORRAR LO QUE NO ME SIRVE*/
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__img[data-v-a383d858] {
-    display: inline-block;
-    width: 45.9%;
-    position: relative;
-}
-.cases .item__block:nth-child(3) .item__img[data-v-a383d858] {
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-.cases .item__img[data-v-a383d858] {
-    filter: grayscale(1);
-    display: block;
-    transition: filter .5s ease;
-    position: relative;
-    overflow: hidden;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-.cases .item__block:nth-child(3) .item__img[data-v-a383d858]:after {
-    padding-top: 57.25%;
-}
-@media screen and (max-width: 1200px){
-.cases .item__img[data-v-a383d858]:after {
-    background: none;
-}
-.cases .item__img[data-v-a383d858]:after {
-    content: "";
-    display: block;
-    background-color: rgba(0,0,0,.25);
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-}
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__block:nth-child(3) .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .item__img>img[data-v-a383d858] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-/*TEXTO*/
-
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
-    display: inline-block;
-    width: 45.9%;
-    text-align: left;
-    margin-top: 14px;
-}
-.cases .item__block:nth-child(3) .item__info[data-v-a383d858] {
-    margin-top: 16px;
-    margin-left: 0;
-}
-.cases .item__info[data-v-a383d858] {
-    display: block;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-
-.cases .item__name[data-v-a383d858] {
-    font: 700 14px/22px "Fatum",sans-serif;
-    color: #363636;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
-    display: inline-block;
-    width: 45.9%;
-    text-align: left;
-    margin-top: 14px;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-.cases .item__square[data-v-a383d858] {
-    padding-top: 1px;
-}
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
-    display: inline-block;
-    width: 45.9%;
-    text-align: left;
-    margin-top: 14px;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-.cases .item__square span[data-v-a383d858] {
-    font: 400 11px/25px "Fatum",sans-serif;
-    color: #1c1c1c;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: .7;
-}
-.cases .list__item:nth-child(2n) .item__block:nth-child(3) .item__info[data-v-a383d858] {
-    display: inline-block;
-    width: 45.9%;
-    text-align: left;
-    margin-top: 14px;
-}
-.cases .list__item:nth-child(2n) .item__block[data-v-a383d858]:nth-child(3) {
-    text-align: right;
-    margin-left: 0;
-    margin-top: 57px;
-    width: 100%;
-    padding-right: 6.3%;
-}
-
-.cases .list__item:first-child .item__block:first-child .item__name[data-v-a383d858] {
-    font-size: 19px;
-}
-.cases .item__block:first-child .item__name[data-v-a383d858] {
-    font-size: 19px;
-}
-.cases .item__name[data-v-a383d858] {
-    font: 700 14px/22px "Fatum",sans-serif;
-    color: #363636;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cases .list__item:first-child .item__block:first-child .item__info[data-v-a383d858] {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 29px;
-    padding-top: 25px;
-}
-
-</style>
 
 
 <body>
@@ -772,13 +849,16 @@ body{
                             </div></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../projects.html">P<div class="landing-hover">royectos</div>
+                        <a class="nav-link text-light" href="../projects.html">P<div class="landing-hover">royectos
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../contact-us.html">C<div class="landing-hover">ontacto</div>
+                        <a class="nav-link text-light" href="../contact-us.html">C<div class="landing-hover">ontacto
+                            </div>
                         </a>
                     </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -786,156 +866,170 @@ body{
 
 
 
-<div class="cases">
-    <div class="cases__list">
-        <div class="list__item" data-v-a383d858="">
-            <div data-v-a383d858="" data-aos-delay="800" class="item__block aos-init aos-animate">
-                <a data-v-a383d858="" href="/case/the-chromatic/" class="item__img">
-                    <img data-v-a383d858="" src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/07/gr8_prokoplaichter-4.jpg" alt="The Chromatic">
-                    <div data-v-a383d858="" class="item__hover">
-                    <div data-v-a383d858="" class="item__inner">
-                    <div data-v-a383d858="" class="item__word">
-                        <span data-v-a383d858="">Open</span>
-                    </div>
-                    
-                    <div data-v-a383d858="" class="item__line"> 
-                    </div>  
-                    <div data-v-a383d858="" class="item__word">
-                        <span data-v-a383d858="">case</span>
-                    </div>
-            </div>
-        </div>
-                </a>
-                <a data-v-a383d858="" href="/case/the-chromatic/" class="item__info">
-                    <div data-v-a383d858="" class="item__name">The Chromatic</div>
-                    <div data-v-a383d858="" class="item__square">
-                        <span data-v-a383d858="">737</span>
-                        <span data-v-a383d858="">sq.m.</span>
-                    </div>
-                </a>
-        </div>
-            <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800" class="item__block aos-init aos-animate">
-                <a data-v-a383d858="" href="/case/severity/" class="item__img">
-                    <img data-v-a383d858="" src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/06/arb01417-2-hdr-enhanced-sr.jpg" alt="Severity"><!---->
-                    <div data-v-a383d858="" class="item__hover">
-                        <div data-v-a383d858="" class="item__inner">
-                            <div data-v-a383d858="" class="item__word">
-                                <span data-v-a383d858="">Open</span>
+    <div class="cases">
+        <div class="cases__list">
+            <div class="list__item" data-v-a383d858="">
+                <div data-v-a383d858="" data-aos-delay="800" class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/the-chromatic/" class="item__img">
+                        <img data-v-a383d858=""
+                            src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/07/gr8_prokoplaichter-4.jpg"
+                            alt="The Chromatic">
+                        <div data-v-a383d858="" class="item__hover">
+                            <div data-v-a383d858="" class="item__inner">
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">Open</span>
+                                </div>
+
+                                <div data-v-a383d858="" class="item__line">
+                                </div>
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">case</span>
+                                </div>
                             </div>
-                            <div data-v-a383d858="" class="item__line">
                         </div>
-                        <div data-v-a383d858="" class="item__word">
-                            <span data-v-a383d858="">case</span>
+                    </a>
+                    <a data-v-a383d858="" href="/case/the-chromatic/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">The Chromatic</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">737</span>
+                            <span data-v-a383d858="">sq.m.</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
-                <a data-v-a383d858="" href="/case/severity/" class="item__info">
-                    <div data-v-a383d858="" class="item__name">Severity</div>
-                    <div data-v-a383d858="" class="item__square">
-                        <span data-v-a383d858="">340</span>
-                        <span data-v-a383d858="">sq.m.</span>
-                    </div>
-                </a>
-            </div>
-            <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800" class="item__block aos-init aos-animate">
-                <a data-v-a383d858="" href="/case/study-ua/" class="item__img">
-                    <img data-v-a383d858="" src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/05/1-1-1.jpg" alt="STUDY.UA"><!---->
-                    <div data-v-a383d858="" class="item__hover">
-                        <div data-v-a383d858="" class="item__inner">
-                            <div data-v-a383d858="" class="item__word">
-                                <span data-v-a383d858="">Open</span>
+                <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800"
+                    class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/severity/" class="item__img">
+                        <img data-v-a383d858=""
+                            src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/06/arb01417-2-hdr-enhanced-sr.jpg"
+                            alt="Severity"><!---->
+                        <div data-v-a383d858="" class="item__hover">
+                            <div data-v-a383d858="" class="item__inner">
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">Open</span>
+                                </div>
+                                <div data-v-a383d858="" class="item__line">
+                                </div>
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">case</span>
+                                </div>
                             </div>
-                        <div data-v-a383d858="" class="item__line"></div>
-                        <div data-v-a383d858="" class="item__word">
-                            <span data-v-a383d858="">case</span>
                         </div>
-                    </div>
+                    </a>
+                    <a data-v-a383d858="" href="/case/severity/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">Severity</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">340</span>
+                            <span data-v-a383d858="">sq.m.</span>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a data-v-a383d858="" href="/case/study-ua/" class="item__info">
-                <div data-v-a383d858="" class="item__name">STUDY.UA</div>
-                <div data-v-a383d858="" class="item__square">
-                    <span data-v-a383d858="">1275</span>
-                    <span data-v-a383d858="">sq.m.</span>
+                <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800"
+                    class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/study-ua/" class="item__img">
+                        <img data-v-a383d858=""
+                            src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/05/1-1-1.jpg"
+                            alt="STUDY.UA"><!---->
+                        <div data-v-a383d858="" class="item__hover">
+                            <div data-v-a383d858="" class="item__inner">
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">Open</span>
+                                </div>
+                                <div data-v-a383d858="" class="item__line"></div>
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">case</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-v-a383d858="" href="/case/study-ua/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">STUDY.UA</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">1275</span>
+                            <span data-v-a383d858="">sq.m.</span>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        </div>
+            </div>
 
 
-        
-        <div class="list__item" data-v-a383d858="">
-            <div data-v-a383d858="" data-aos-delay="800" class="item__block aos-init aos-animate">
-                <a data-v-a383d858="" href="/case/the-chromatic/" class="item__img">
-                    <img data-v-a383d858="" src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/07/gr8_prokoplaichter-4.jpg" alt="The Chromatic">
-                    <div data-v-a383d858="" class="item__hover">
-                    <div data-v-a383d858="" class="item__inner">
-                    <div data-v-a383d858="" class="item__word">
-                        <span data-v-a383d858="">Open</span>
-                    </div>
-                    
-                    <div data-v-a383d858="" class="item__line"> 
-                    </div>  
-                    <div data-v-a383d858="" class="item__word">
-                        <span data-v-a383d858="">case</span>
-                    </div>
-            </div>
-        </div>
-                </a>
-                <a data-v-a383d858="" href="/case/the-chromatic/" class="item__info">
-                    <div data-v-a383d858="" class="item__name">The Chromatic</div>
-                    <div data-v-a383d858="" class="item__square">
-                        <span data-v-a383d858="">737</span>
-                        <span data-v-a383d858="">sq.m.</span>
-                    </div>
-                </a>
-        </div>
-            <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800" class="item__block aos-init aos-animate">
-                <a data-v-a383d858="" href="/case/severity/" class="item__img">
-                    <img data-v-a383d858="" src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/06/arb01417-2-hdr-enhanced-sr.jpg" alt="Severity"><!---->
-                    <div data-v-a383d858="" class="item__hover">
-                        <div data-v-a383d858="" class="item__inner">
-                            <div data-v-a383d858="" class="item__word">
-                                <span data-v-a383d858="">Open</span>
+
+            <div class="list__item" data-v-a383d858="">
+                <div data-v-a383d858="" data-aos-delay="800" class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/the-chromatic/" class="item__img">
+                        <img data-v-a383d858=""
+                            src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/07/gr8_prokoplaichter-4.jpg"
+                            alt="The Chromatic">
+                        <div data-v-a383d858="" class="item__hover">
+                            <div data-v-a383d858="" class="item__inner">
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">Open</span>
+                                </div>
+
+                                <div data-v-a383d858="" class="item__line">
+                                </div>
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">case</span>
+                                </div>
                             </div>
-                            <div data-v-a383d858="" class="item__line">
                         </div>
-                        <div data-v-a383d858="" class="item__word">
-                            <span data-v-a383d858="">case</span>
+                    </a>
+                    <a data-v-a383d858="" href="/case/the-chromatic/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">The Chromatic</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">737</span>
+                            <span data-v-a383d858="">sq.m.</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
-                <a data-v-a383d858="" href="/case/severity/" class="item__info">
-                    <div data-v-a383d858="" class="item__name">Severity</div>
-                    <div data-v-a383d858="" class="item__square">
-                        <span data-v-a383d858="">340</span>
-                        <span data-v-a383d858="">sq.m.</span>
-                    </div>
-                </a>
+                <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800"
+                    class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/severity/" class="item__img">
+                        <img data-v-a383d858=""
+                            src="https://zikzakarchitects.com/hwp/wp-content/uploads/2023/06/arb01417-2-hdr-enhanced-sr.jpg"
+                            alt="Severity"><!---->
+                        <div data-v-a383d858="" class="item__hover">
+                            <div data-v-a383d858="" class="item__inner">
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">Open</span>
+                                </div>
+                                <div data-v-a383d858="" class="item__line">
+                                </div>
+                                <div data-v-a383d858="" class="item__word">
+                                    <span data-v-a383d858="">case</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-v-a383d858="" href="/case/severity/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">Severity</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">340</span>
+                            <span data-v-a383d858="">sq.m.</span>
+                        </div>
+                    </a>
+                </div>
+                <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800"
+                    class="item__block aos-init aos-animate">
+                    <a data-v-a383d858="" href="/case/study-ua/" class="item__info">
+                        <div data-v-a383d858="" class="item__name">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Odit, accusamus perspiciatis. Officiis iure repellat atque consequatur odit
+                            nemo similique quas, dicta facere eligendi rerum tempore iusto! Fugit dolore omnis
+                            voluptatem.</div>
+                        <div data-v-a383d858="" class="item__square">
+                            <span data-v-a383d858="">1275</span>
+                            <span data-v-a383d858="">sq.m.</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div data-v-a383d858="" data-aos="custom-fade" data-aos-delay="800" class="item__block aos-init aos-animate">
-            <a data-v-a383d858="" href="/case/study-ua/" class="item__info">
-                <div data-v-a383d858="" class="item__name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, accusamus perspiciatis. Officiis iure repellat atque consequatur odit 
-                    nemo similique quas, dicta facere eligendi rerum tempore iusto! Fugit dolore omnis voluptatem.</div>
-                <div data-v-a383d858="" class="item__square">
-                    <span data-v-a383d858="">1275</span>
-                    <span data-v-a383d858="">sq.m.</span>
-                </div>
-            </a>
-        </div>
         </div>
     </div>
-</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous">
-    </script>
-     <script src="../js/projects.js"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="../js/projects.js"></script>
 </body>
+
 </html>
-
-
