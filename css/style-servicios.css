@@ -20,12 +20,13 @@
     overflow-x: hidden;
 }
 .servicios-banner{
-    background-image: url(/img/servicios/nosotros2.jpg);
-    background-size: contain;
+    background-image: url(../img/Proyecto/Proyecto-Las_Prunas/Primera.jpg);
+    background-size: cover;
     width:100%;
     height: 350px;
     overflow: hidden;
     padding-top: 50px;
+
 }
 
 .servicios-content{
