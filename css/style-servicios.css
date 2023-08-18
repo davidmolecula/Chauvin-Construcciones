@@ -95,7 +95,9 @@
 }
 .servicios-content-sellos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 100px;
 
 }
@@ -107,6 +109,11 @@
 .servicios-content-sellos img:first-child{
     width: 300px;
     height: 200px;
+}
+
+.calidad{
+    text-transform: uppercase;
+    font-family: Gotham;
 }
 
 @media (max-width:991px){

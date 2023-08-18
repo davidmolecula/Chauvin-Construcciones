@@ -90,7 +90,7 @@
 .daniel-content{
     display: flex;
     flex-wrap: wrap;
-    height: 90vh;
+    height: fit-content;
     
 }
 .nosotros-daniel-translate div{
@@ -165,7 +165,9 @@ h4{
     .nav-link, .landing-hover{
         color: white;
     }
-   
+   .nosotros-content{
+    height: fit-content;
+   }
     .daniel-content{
         flex-wrap: wrap;
         height: fit-content;
